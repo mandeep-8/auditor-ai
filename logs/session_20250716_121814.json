@@ -1,0 +1,16 @@
+[
+  {
+    "log_id": "85ac5929-f4c7-4278-906d-72af333e1817",
+    "timestamp": "2025-07-16T12:18:14.049354",
+    "session_id": "20250716_121814",
+    "component": "Application",
+    "message": "Application session initialized",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "session_id": "20250716_121814",
+      "decision_id": "application_8ec44d52"
+    },
+    "reason": "New session ID: 20250716_121814"
+  }
+]

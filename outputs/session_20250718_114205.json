@@ -1,0 +1,58 @@
+[
+  {
+    "log_id": "8b203df2-b4df-4d1d-a7f9-dfef411330d9",
+    "timestamp": "2025-07-18T11:42:22.376880",
+    "session_id": "20250718_114205",
+    "component": "PIP Report",
+    "message": "Loading Files",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_report_0d236805"
+    },
+    "reason": "pip_conclusion.txt and pip_info.txt loaded successfully",
+    "source": "Files=['pip_conclusion.txt', 'pip_info.txt']"
+  },
+  {
+    "log_id": "40aea94b-8bad-4815-959d-9569ab2423e5",
+    "timestamp": "2025-07-18T11:42:22.385397",
+    "session_id": "20250718_114205",
+    "component": "PIP Report",
+    "message": "Generated PDF: pip_report.pdf",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_report_aa57b4e6"
+    },
+    "reason": "PDF report generated successfully",
+    "source": "Files=['Organisational Chart Names: Org_chart_v2.pdf, Org_chart (1).png\\n', 'Governance Document Names: User Access Management Policy.pdf\\n'], Remarks=[]"
+  },
+  {
+    "log_id": "5af25ccc-a161-4d6b-bc1e-a93a2ca73ff6",
+    "timestamp": "2025-07-18T11:42:27.700396",
+    "session_id": "20250718_114205",
+    "component": "PIP Report",
+    "message": "Loading Files",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_report_aed732f2"
+    },
+    "reason": "pip_conclusion.txt and pip_info.txt loaded successfully",
+    "source": "Files=['pip_conclusion.txt', 'pip_info.txt']"
+  },
+  {
+    "log_id": "0969734f-ec1e-453e-baf8-c1dbbcc37164",
+    "timestamp": "2025-07-18T11:42:27.715810",
+    "session_id": "20250718_114205",
+    "component": "PIP Report",
+    "message": "Generated PDF: pip_report.pdf",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_report_ddaa648c"
+    },
+    "reason": "PDF report generated successfully",
+    "source": "Files=['Organisational Chart Names: Org_chart_v2.pdf, Org_chart (1).png\\n', 'Governance Document Names: User Access Management Policy.pdf\\n'], Remarks=[]"
+  }
+]

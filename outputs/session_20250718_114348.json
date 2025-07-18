@@ -1,0 +1,30 @@
+[
+  {
+    "log_id": "177e00f3-6477-4125-ba08-3666c3620295",
+    "timestamp": "2025-07-18T11:44:44.316647",
+    "session_id": "20250718_114348",
+    "component": "PIP Report",
+    "message": "Loading Files",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_report_3a09395c"
+    },
+    "reason": "pip_conclusion.txt and pip_info.txt loaded successfully",
+    "source": "Files=['pip_conclusion.txt', 'pip_info.txt']"
+  },
+  {
+    "log_id": "299a7cd9-b177-4b71-bb22-cb59fb301617",
+    "timestamp": "2025-07-18T11:44:44.327887",
+    "session_id": "20250718_114348",
+    "component": "PIP Report",
+    "message": "Generated PDF: pip_report.pdf",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_report_0183975b"
+    },
+    "reason": "PDF report generated successfully",
+    "source": "Files=['Organisational Chart Names: Org_chart_v2.pdf, Org_chart (1).png\\n', 'Governance Document Names: User Access Management Policy.pdf\\n'], Remarks=[]"
+  }
+]

@@ -1,0 +1,973 @@
+[
+  {
+    "log_id": "d02b6a42-d684-47c4-8959-97d34076fac7",
+    "timestamp": "2025-07-15T17:34:38.735951",
+    "session_id": "20250715_173438",
+    "component": "Application",
+    "message": "Application session initialized",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "session_id": "20250715_173438",
+      "decision_id": "application_6eb28e27"
+    },
+    "reason": "New session ID: 20250715_173438"
+  },
+  {
+    "log_id": "2636178b-a588-4d81-8007-782e1c2a4bde",
+    "timestamp": "2025-07-15T17:35:36.317812",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Saving",
+    "level": "INFO"
+  },
+  {
+    "log_id": "e10869ef-be1b-4a7f-bf1c-372a7d033c1b",
+    "timestamp": "2025-07-15T17:35:36.318820",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Saving",
+    "level": "INFO"
+  },
+  {
+    "log_id": "26093343-096e-49cb-9a67-d12be690769a",
+    "timestamp": "2025-07-15T17:35:36.320831",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Saving",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_3e73ad1f"
+    },
+    "reason": "File saved successfully"
+  },
+  {
+    "log_id": "4f206ba3-fd12-448d-a83e-68d502fa8930",
+    "timestamp": "2025-07-15T17:35:36.321828",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Saving",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_327c958b"
+    },
+    "reason": "File saved successfully"
+  },
+  {
+    "log_id": "f2b096ca-4cd2-4b3a-8440-df8eaa6f484d",
+    "timestamp": "2025-07-15T17:35:36.323248",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO"
+  },
+  {
+    "log_id": "a2334afb-8e38-4d2c-8c97-73c5edfeb4f4",
+    "timestamp": "2025-07-15T17:35:36.323248",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO"
+  },
+  {
+    "log_id": "dd753582-995c-4888-8162-2fd9672200c5",
+    "timestamp": "2025-07-15T17:35:36.749728",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_66447a3c"
+    },
+    "reason": "Text extracted successfully",
+    "source": "Text Preview=Board of Directors\nFinance Technology Product Management Operations Risk & Compliance People & Cultu..."
+  },
+  {
+    "log_id": "cdc0edbf-5248-466e-bf81-c149f6b8a877",
+    "timestamp": "2025-07-15T17:35:36.752729",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Validation",
+    "level": "INFO"
+  },
+  {
+    "log_id": "bde25346-dc63-4d80-972c-fce4f9fa0c83",
+    "timestamp": "2025-07-15T17:35:39.733995",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_2bc2c86c"
+    },
+    "reason": "See LLM response for details"
+  },
+  {
+    "log_id": "557165cc-4f02-48a8-8f34-39984101d7f9",
+    "timestamp": "2025-07-15T17:35:39.739733",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "Validate File Org_chart_v2.pdf",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart_v2.pdf",
+      "category": "Organizational Chart",
+      "reason": null,
+      "evidence": "Board of Directors\nFinance Technology Product Management Operations Risk & Compliance People & Cultu...",
+      "decision_id": "document_validation_014ea20d"
+    }
+  },
+  {
+    "log_id": "024684ac-bcf6-47e6-a2b6-1374ca980b9f",
+    "timestamp": "2025-07-15T17:35:54.431072",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_872f0e89"
+    },
+    "reason": "Text extracted successfully",
+    "source": "Text Preview=Board of Directors Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li W..."
+  },
+  {
+    "log_id": "5167d25b-61ea-436e-a393-f7161950246c",
+    "timestamp": "2025-07-15T17:35:54.436129",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Validation",
+    "level": "INFO"
+  },
+  {
+    "log_id": "c33954ec-94bd-4574-bafa-70901f0a724e",
+    "timestamp": "2025-07-15T17:35:56.121146",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_f8d26fd0"
+    },
+    "reason": "See LLM response for details"
+  },
+  {
+    "log_id": "8310d426-9902-47cb-9b03-a945fc8c03fd",
+    "timestamp": "2025-07-15T17:35:56.125455",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "Validate File Org_chart (1).png",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart (1).png",
+      "category": "Organizational Chart",
+      "reason": null,
+      "evidence": "Board of Directors Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li W...",
+      "decision_id": "document_validation_a18c0dcd"
+    }
+  },
+  {
+    "log_id": "70d8d453-e8ef-4c50-851e-9c567ef3afab",
+    "timestamp": "2025-07-15T17:35:56.127645",
+    "session_id": "20250715_173438",
+    "component": "PIP Validation",
+    "message": "Organizational Charts Validated: True",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "files": [
+        "Org_chart_v2.pdf",
+        "Org_chart (1).png"
+      ],
+      "decision_id": "pip_validation_b3df7cd3"
+    },
+    "reason": "Files: ['Org_chart_v2.pdf', 'Org_chart (1).png']"
+  },
+  {
+    "log_id": "d31617d0-b231-491e-adf4-62fb72a25ef2",
+    "timestamp": "2025-07-15T17:35:56.137599",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Saving",
+    "level": "INFO"
+  },
+  {
+    "log_id": "f709b495-0f14-45bf-b7f1-a7db875c5edb",
+    "timestamp": "2025-07-15T17:35:56.142603",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Saving",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_70410777"
+    },
+    "reason": "File saved successfully"
+  },
+  {
+    "log_id": "81bb58c7-b788-470b-9543-e7b3231b88de",
+    "timestamp": "2025-07-15T17:35:56.145122",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Text Extraction",
+    "level": "INFO"
+  },
+  {
+    "log_id": "5ea2f5e8-9020-4524-abc6-c50cd345cc41",
+    "timestamp": "2025-07-15T17:35:56.384649",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Text Extraction",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_b4d543a5"
+    },
+    "reason": "Text extracted successfully",
+    "source": "Text Preview=Umay Solutions \u2013 User Access Management (UAM)\nPolicy & Procedures\nDocument ID: UAM-PL-001\nVersion: 3..."
+  },
+  {
+    "log_id": "346eebd4-387f-4e6e-8db8-a4a6767b1001",
+    "timestamp": "2025-07-15T17:35:56.386844",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Validation",
+    "level": "INFO"
+  },
+  {
+    "log_id": "bdc35290-ef7b-45f7-9d0d-641c78aaf0ce",
+    "timestamp": "2025-07-15T17:35:58.412148",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_11e06a86"
+    },
+    "reason": "See LLM response for details"
+  },
+  {
+    "log_id": "ad92b0b8-96d3-42b9-8427-3d96ba5936f4",
+    "timestamp": "2025-07-15T17:35:58.425098",
+    "session_id": "20250715_173438",
+    "component": "Document Validation",
+    "message": "Validate File User Access Management Policy.pdf",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "User Access Management Policy.pdf",
+      "category": "Governance Document",
+      "reason": null,
+      "evidence": "Umay Solutions \u2013 User Access Management (UAM)\nPolicy & Procedures\nDocument ID: UAM-PL-001\nVersion: 3...",
+      "decision_id": "document_validation_39263774"
+    }
+  },
+  {
+    "log_id": "c704d7a2-dc3a-4c70-8ccc-80b642997ec5",
+    "timestamp": "2025-07-15T17:35:58.428097",
+    "session_id": "20250715_173438",
+    "component": "PIP Validation",
+    "message": "Governance Documents Validated: True",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "files": [
+        "User Access Management Policy.pdf"
+      ],
+      "decision_id": "pip_validation_5680887a"
+    },
+    "reason": "Files: ['User Access Management Policy.pdf']"
+  },
+  {
+    "log_id": "ab4a478a-6f5a-4bd6-b566-6479d3bb8e9c",
+    "timestamp": "2025-07-15T17:35:58.452869",
+    "session_id": "20250715_173438",
+    "component": "UI Interaction",
+    "message": "Validate button clicked",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "ui_interaction_130659e6"
+    }
+  },
+  {
+    "log_id": "933158b7-3d6d-4d6d-882f-5b700d4b4191",
+    "timestamp": "2025-07-15T17:35:58.479467",
+    "session_id": "20250715_173438",
+    "component": "PIP Validation",
+    "message": "Text Inputs Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "user_input": {
+        "control_owner_name": "James Okwiri",
+        "control_owner_title": "VP Engineering",
+        "control_owner_email": "ali16saklani@gmail.com"
+      },
+      "decision_id": "pip_validation_ecf4109f"
+    },
+    "reason": "Valid inputs."
+  },
+  {
+    "log_id": "15cac3e9-2342-4e9a-9ac1-cad539c2c40c",
+    "timestamp": "2025-07-15T17:36:02.180206",
+    "session_id": "20250715_173438",
+    "component": "UI Interaction",
+    "message": "SUBMIT button clicked",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "ui_interaction_713b440b"
+    }
+  },
+  {
+    "log_id": "b30fa5ea-4a1c-45ed-8609-a6fcbd65bb8c",
+    "timestamp": "2025-07-15T17:36:02.186240",
+    "session_id": "20250715_173438",
+    "component": "PIP Submission",
+    "message": "Valid documents written to pip_info.txt",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "org_charts": [
+        "Org_chart_v2.pdf",
+        "Org_chart (1).png"
+      ],
+      "governance_docs": [
+        "User Access Management Policy.pdf"
+      ],
+      "decision_id": "pip_submission_4223e876"
+    },
+    "reason": "Org Charts=['Org_chart_v2.pdf', 'Org_chart (1).png'], Governance Docs=['User Access Management Policy.pdf']"
+  },
+  {
+    "log_id": "5c42dc93-60bb-4e69-af20-03eda20fe06f",
+    "timestamp": "2025-07-15T17:36:02.191003",
+    "session_id": "20250715_173438",
+    "component": "PIP Submission",
+    "message": "Cleared pip_conclusion.txt",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_submission_da71c2e7"
+    }
+  },
+  {
+    "log_id": "c7531e96-f2ae-4a07-b9e3-2b543465f714",
+    "timestamp": "2025-07-15T17:36:02.195527",
+    "session_id": "20250715_173438",
+    "component": "PIP Validation",
+    "message": "Name match found in Org_chart_v2.pdf at line 51",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart_v2.pdf",
+      "line_number": 51,
+      "decision_id": "pip_validation_b0f8a01b"
+    },
+    "reason": "Name 'James Okwiri' found in org chart"
+  },
+  {
+    "log_id": "5ac21457-9168-49a7-8ed0-d77f53d7ca1c",
+    "timestamp": "2025-07-15T17:36:02.201620",
+    "session_id": "20250715_173438",
+    "component": "PIP Validation",
+    "message": "Title match found in Org_chart_v2.pdf at line 51",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart_v2.pdf",
+      "line_number": 51,
+      "decision_id": "pip_validation_160ee288"
+    },
+    "reason": "Title 'VP Engineering' matched in org chart"
+  },
+  {
+    "log_id": "8e1132d3-e7aa-44aa-a2d9-27646e3d9fa6",
+    "timestamp": "2025-07-15T17:36:02.206963",
+    "session_id": "20250715_173438",
+    "component": "PIP Submission",
+    "message": "PIP form submitted successfully",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_submission_4a0b33ad"
+    },
+    "reason": "All validations passed, navigating to CDD processing"
+  },
+  {
+    "log_id": "82a1a352-9661-48b7-8817-40fe1747407f",
+    "timestamp": "2025-07-15T17:36:02.675531",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Started CDD processing",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_c39fcce9"
+    }
+  },
+  {
+    "log_id": "11bb6960-3713-4b77-a6d7-16d578ee861d",
+    "timestamp": "2025-07-15T17:36:05.104619",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "QA Chain Initialization",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_9c636f22"
+    },
+    "reason": "QA chain initialized successfully"
+  },
+  {
+    "log_id": "64337ebe-6904-49e1-9f6c-8f61b13d33f2",
+    "timestamp": "2025-07-15T17:36:05.658160",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Excel File Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_9018db5e"
+    },
+    "reason": "Excel file loaded successfully"
+  },
+  {
+    "log_id": "0e9dce15-e616-4993-aedc-7cc91cc5ce14",
+    "timestamp": "2025-07-15T17:36:05.662655",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Session State Initialization",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_44c9f08a"
+    },
+    "reason": "Excel DataFrame initialized"
+  },
+  {
+    "log_id": "455acd18-7fa4-46f1-9263-de1d1fe9d12f",
+    "timestamp": "2025-07-15T17:36:05.669691",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_330d3fb0"
+    },
+    "reason": "Approver Name column not found in Excel"
+  },
+  {
+    "log_id": "d4664552-5605-40db-b578-8645a655d290",
+    "timestamp": "2025-07-15T17:36:07.730006",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 1: Question=How is a new user access requested? (web form, email request, user access ticket etc.)",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_22d693a4"
+    },
+    "reason": "Answer=Access Request Form (ARF)"
+  },
+  {
+    "log_id": "cc491ea2-9635-4dd8-bd64-e3d3ef832b60",
+    "timestamp": "2025-07-15T17:36:09.439299",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 2: Question=How is a request made for change in user access to their existing access? (web form, email request, user access ticket etc.)",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_9fc12011"
+    },
+    "reason": "Answer=Access Request Form (ARF)"
+  },
+  {
+    "log_id": "ff990e0a-3557-4052-a50a-5bb63cdc8eb1",
+    "timestamp": "2025-07-15T17:36:11.011604",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 3: Question=Who can approve a new user access request? Is there a list of approvers?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_57603f6f"
+    },
+    "reason": "Answer=CRCO, Line Managers"
+  },
+  {
+    "log_id": "5043604c-c5dd-4174-9f5a-cd4a5f113e33",
+    "timestamp": "2025-07-15T17:36:13.202615",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 4: Question=Who can approve an access change request? Is there a list of approvers?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_fdd5ae0c"
+    },
+    "reason": "Answer=Answer: Line Managers, CRCO"
+  },
+  {
+    "log_id": "858716ef-b659-4f1a-9c84-e2fb05d424b0",
+    "timestamp": "2025-07-15T17:36:14.642407",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 5: Question=Are there any access expiry dates mentioned on the new access request for vendors/contractors (non-employees)",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_e09a2115"
+    },
+    "reason": "Answer=Yes, 12 months"
+  },
+  {
+    "log_id": "d3227318-f50e-4d51-8165-4ab6c9c8694d",
+    "timestamp": "2025-07-15T17:36:16.510429",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 6: Question=Whether terms of contract or the project have been extended for contractors for continued access. Any variation to the scope of work or contract which requires modification of access for contractors.",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_f854b93e"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "f0fd0205-b846-47c4-a6c5-9cfcb2eb5f07",
+    "timestamp": "2025-07-15T17:36:19.340696",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 7: Question=Where is the new user approval details saved or logged?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_32f8c005"
+    },
+    "reason": "Answer=Access Records repository"
+  },
+  {
+    "log_id": "0545ba86-ac29-4d43-b074-7fe6f276d443",
+    "timestamp": "2025-07-15T17:36:23.058064",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 8: Question=Where is the change access approval saved or logged?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_40c4cb88"
+    },
+    "reason": "Answer=Access Review Archive"
+  },
+  {
+    "log_id": "0804077e-26b6-4a71-b6ad-ae855666a5ec",
+    "timestamp": "2025-07-15T17:36:25.164423",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 9: Question=How is new user access requested and approved in an emergency. Can new user access be created without an approval in an emergency?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_e56a561a"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "7efd021e-c51c-4322-9734-6319d9fae51b",
+    "timestamp": "2025-07-15T17:36:26.724783",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 10: Question=How is modified user access requested and approved in an emergency. Can user access be modified in an emergency without an approval?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_90ca258a"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "abadbdca-2519-468f-8849-7ebc2c0c2420",
+    "timestamp": "2025-07-15T17:36:28.628913",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 11: Question=Does the new user access request mentions exact role(s)/permission(s) requested?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_2949ee93"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "fe05f327-5042-439e-b9cc-4ef8f5e523d6",
+    "timestamp": "2025-07-15T17:36:29.914871",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 12: Question=Does the change access request mentions exact role(s)/permission(s) requested?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_9c6f623f"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "bf2b6e3d-909e-4314-8ea0-d4a217d08a28",
+    "timestamp": "2025-07-15T17:36:31.279790",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 13: Question=Does the emergency access request mentions exact role(s)/permission(s) requested?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_3dc8f7d2"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "63c8656b-3ea4-4530-bc8b-ce4dbf403615",
+    "timestamp": "2025-07-15T17:36:32.618054",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 14: Question=Does the document mentions anything regarding created/provisioned access must match the approved new user access request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_f99f5d44"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "8a4ca912-350a-4197-9c27-817d23c089d5",
+    "timestamp": "2025-07-15T17:36:34.010109",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 15: Question=Does the document mentions anything regarding created/provisioned access must match the approved change access request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_9c71597d"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "fa1f4903-145e-4519-9780-ef33e841dc42",
+    "timestamp": "2025-07-15T17:36:35.380512",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 16: Question=Who creates (provisions) the new account access request in the system?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_ec1f453b"
+    },
+    "reason": "Answer=IT Operations \u2013 Access Administration Team"
+  },
+  {
+    "log_id": "9c81371f-9922-450b-aece-d09485e783fb",
+    "timestamp": "2025-07-15T17:36:38.181959",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 17: Question=Who modifies the access change request in the system?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_6c7851ff"
+    },
+    "reason": "Answer=IT Operations \u2013 Access Administration Team"
+  },
+  {
+    "log_id": "610c797c-f657-49fb-bcd1-febb7256811e",
+    "timestamp": "2025-07-15T17:36:40.250213",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 18: Question=Who creates the new account request for emergency access request access?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_1a7d7b95"
+    },
+    "reason": "Answer=Line Managers"
+  },
+  {
+    "log_id": "59f03c13-a30d-4b23-94b8-20fdf0e94ac4",
+    "timestamp": "2025-07-15T17:36:41.901369",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 19: Question=Segregation check: Are the approver for change access request and the modifier different people/roles?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_23645c01"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "59c6cf45-c18b-4a3d-9eb3-99fe091d9cda",
+    "timestamp": "2025-07-15T17:36:43.239748",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 20: Question=Segregation check: Are the new user access approver and the account creator different?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_eefc3f39"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "7ffb1184-1430-4aac-a77a-42c7490dfc55",
+    "timestamp": "2025-07-15T17:36:44.823015",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 21: Question=Does the system log who created the new account?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_13852d0e"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "67a85a78-cf7a-4f4e-ab7b-d8d8dccc3340",
+    "timestamp": "2025-07-15T17:36:46.724074",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 22: Question=Does the system log who modified the account?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_5f5ee5e8"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "aa5b6784-cbf3-44ff-9a1d-36fea22803ea",
+    "timestamp": "2025-07-15T17:36:48.178932",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 23: Question=Is there a final check that created access equals new user access approved request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_3ab68945"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "d66a86d4-9784-4229-b775-f472257d7d60",
+    "timestamp": "2025-07-15T17:36:49.683815",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 24: Question=Is there a final check that modified access equals approved access change request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_d92430b0"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "b7b25769-f342-493c-bee5-d6299f28c4f5",
+    "timestamp": "2025-07-15T17:36:51.769984",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 25: Question=Does the document explains that granted access aligns with job responsibilities/roles? ",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_512ff5a7"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "f8e01529-ede0-46f5-852a-a51c70cb3b89",
+    "timestamp": "2025-07-15T17:36:53.667840",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Row 26: Question=Is there a segregation of duties conflict assessed while granting/modifying access?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_275f4339"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "b8c8f65c-c148-4f7b-89e9-f00cfc8df0a8",
+    "timestamp": "2025-07-15T17:36:54.008620",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "CDD Text Generation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "text_length": 371,
+      "decision_id": "cdd_processing_4e017ac0"
+    },
+    "reason": "CDD text generated from Excel answers"
+  },
+  {
+    "log_id": "e94c34b4-a630-48b2-9c2a-0d05e3c98641",
+    "timestamp": "2025-07-15T17:36:54.012437",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_4ba7af47"
+    },
+    "reason": "Approver Name column not found in Excel"
+  },
+  {
+    "log_id": "21ce1729-427e-406b-9dae-88f2a9e43ddd",
+    "timestamp": "2025-07-15T17:36:54.021497",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_1038b059"
+    },
+    "reason": "All approver job titles found in answers"
+  },
+  {
+    "log_id": "a1c75aaf-1b65-42d5-88fd-c095e9c1fc23",
+    "timestamp": "2025-07-15T17:36:54.027852",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Question Processing Completed",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_553e816e"
+    },
+    "reason": "All questions processed"
+  },
+  {
+    "log_id": "b6f6488d-1bfd-4168-ba55-32a3a03d72ed",
+    "timestamp": "2025-07-15T17:36:54.445415",
+    "session_id": "20250715_173438",
+    "component": "CDD Report",
+    "message": "Saving DOCX: cdd_report_20250715_173654.docx",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\cdd_report_20250715_173654.docx",
+      "decision_id": "cdd_report_85d36368"
+    },
+    "reason": "DOCX saved successfully"
+  },
+  {
+    "log_id": "921eac0c-a149-4740-a454-ce02f99af576",
+    "timestamp": "2025-07-15T17:36:54.512723",
+    "session_id": "20250715_173438",
+    "component": "CDD Report",
+    "message": "Generated DOCX: cdd_report_20250715_173654.docx",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\cdd_report_20250715_173654.docx",
+      "decision_id": "cdd_report_61f61a8c"
+    },
+    "reason": "DOCX report generated successfully"
+  },
+  {
+    "log_id": "08c8f4b5-a396-4fdf-8df4-31ac10e99c9e",
+    "timestamp": "2025-07-15T17:36:54.524959",
+    "session_id": "20250715_173438",
+    "component": "CDD Processing",
+    "message": "Audit Start Check",
+    "level": "WARNING",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "cdd_processing_24c0d9a3"
+    },
+    "reason": "CDD not saved or approver titles not validated"
+  }
+]

@@ -1,0 +1,4068 @@
+[
+  {
+    "log_id": "cdb85576-1416-4ec9-b110-c18156e0661c",
+    "timestamp": "2025-07-15T17:38:45.086980",
+    "session_id": "20250715_173845",
+    "component": "Application",
+    "message": "Application session initialized",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "session_id": "20250715_173845",
+      "decision_id": "application_242fc290"
+    },
+    "reason": "New session ID: 20250715_173845"
+  },
+  {
+    "log_id": "5181554f-448f-4dba-8536-cf28426acb0a",
+    "timestamp": "2025-07-15T17:40:05.605449",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Saving",
+    "level": "INFO"
+  },
+  {
+    "log_id": "16e91f96-180d-4a64-9832-aff838bb5005",
+    "timestamp": "2025-07-15T17:40:05.607471",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Saving",
+    "level": "INFO"
+  },
+  {
+    "log_id": "34fd9ead-6df9-4967-9e6e-904b67b0aca1",
+    "timestamp": "2025-07-15T17:40:05.609470",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Saving",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_54a3665a"
+    },
+    "reason": "File saved successfully"
+  },
+  {
+    "log_id": "5806f76a-bb57-4005-a424-3fb18abd2aa1",
+    "timestamp": "2025-07-15T17:40:05.611475",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO"
+  },
+  {
+    "log_id": "06f715eb-eee4-453d-bdd7-6ae3df5e6732",
+    "timestamp": "2025-07-15T17:40:05.611475",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Saving",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_efc54fef"
+    },
+    "reason": "File saved successfully"
+  },
+  {
+    "log_id": "1e1613ba-2f1f-4380-b9f2-72ada92fd1de",
+    "timestamp": "2025-07-15T17:40:05.613983",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO"
+  },
+  {
+    "log_id": "00556c92-643e-4ff1-9524-e1e4c07637d6",
+    "timestamp": "2025-07-15T17:40:06.170738",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_9a818c67"
+    },
+    "reason": "Text extracted successfully",
+    "source": "Text Preview=Board of Directors\nFinance Technology Product Management Operations Risk & Compliance People & Cultu..."
+  },
+  {
+    "log_id": "25798a45-e782-4194-83df-b512fd5072d9",
+    "timestamp": "2025-07-15T17:40:06.172739",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Validation",
+    "level": "INFO"
+  },
+  {
+    "log_id": "587156c5-f0e5-4365-8fbb-91b43ed309bf",
+    "timestamp": "2025-07-15T17:40:08.946836",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart_v2.pdf, Category=Organizational Chart, Step=Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_2ba57a0b"
+    },
+    "reason": "See LLM response for details"
+  },
+  {
+    "log_id": "a84d16f5-78e0-43e3-9d71-a0b030cc1d77",
+    "timestamp": "2025-07-15T17:40:08.951173",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "Validate File Org_chart_v2.pdf",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart_v2.pdf",
+      "category": "Organizational Chart",
+      "reason": null,
+      "evidence": "Board of Directors\nFinance Technology Product Management Operations Risk & Compliance People & Cultu...",
+      "decision_id": "document_validation_fa27fa58"
+    }
+  },
+  {
+    "log_id": "aa582180-7cc6-4b89-9e08-d60904969d1e",
+    "timestamp": "2025-07-15T17:40:24.927772",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_a108f84d"
+    },
+    "reason": "Text extracted successfully",
+    "source": "Text Preview=Board of Directors Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li W..."
+  },
+  {
+    "log_id": "fddce0a2-4261-410b-a5d7-1f76a6182a04",
+    "timestamp": "2025-07-15T17:40:24.931929",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Validation",
+    "level": "INFO"
+  },
+  {
+    "log_id": "fc8b7ddf-f167-484f-892c-937e1d1f72a1",
+    "timestamp": "2025-07-15T17:40:27.389215",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_c81bb250"
+    },
+    "reason": "See LLM response for details"
+  },
+  {
+    "log_id": "4c4d28ce-7247-4afa-99a0-150152cf4934",
+    "timestamp": "2025-07-15T17:40:27.392374",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "Validate File Org_chart (1).png",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart (1).png",
+      "category": "Organizational Chart",
+      "reason": null,
+      "evidence": "Board of Directors Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li W...",
+      "decision_id": "document_validation_ec897f44"
+    }
+  },
+  {
+    "log_id": "41620078-3a63-4293-b4dc-b6896556c154",
+    "timestamp": "2025-07-15T17:40:27.396413",
+    "session_id": "20250715_173845",
+    "component": "PIP Validation",
+    "message": "Organizational Charts Validated: True",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "files": [
+        "Org_chart_v2.pdf",
+        "Org_chart (1).png"
+      ],
+      "decision_id": "pip_validation_3162877d"
+    },
+    "reason": "Files: ['Org_chart_v2.pdf', 'Org_chart (1).png']"
+  },
+  {
+    "log_id": "78393910-8a3f-4f06-8121-c3978ab5b2ec",
+    "timestamp": "2025-07-15T17:40:27.402697",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Saving",
+    "level": "INFO"
+  },
+  {
+    "log_id": "35fb12d7-bc7e-4bfd-a504-c89526276e85",
+    "timestamp": "2025-07-15T17:40:27.409756",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Saving",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_4e95bbf0"
+    },
+    "reason": "File saved successfully"
+  },
+  {
+    "log_id": "bfcda9dd-a20d-400f-8739-851b1aaf858e",
+    "timestamp": "2025-07-15T17:40:27.416112",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Text Extraction",
+    "level": "INFO"
+  },
+  {
+    "log_id": "f2d5c100-0eba-43da-82bc-addc16cd5313",
+    "timestamp": "2025-07-15T17:40:27.749396",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Text Extraction",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_1faa96dc"
+    },
+    "reason": "Text extracted successfully",
+    "source": "Text Preview=Umay Solutions \u2013 User Access Management (UAM)\nPolicy & Procedures\nDocument ID: UAM-PL-001\nVersion: 3..."
+  },
+  {
+    "log_id": "98eb5f2c-5be9-4609-a2ed-fe9a122de51d",
+    "timestamp": "2025-07-15T17:40:27.755007",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Validation",
+    "level": "INFO"
+  },
+  {
+    "log_id": "8282469d-dfc2-4d58-9fc5-f7b0ea6559f8",
+    "timestamp": "2025-07-15T17:40:29.857126",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "File=User Access Management Policy.pdf, Category=Governance Document, Step=Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_12a93618"
+    },
+    "reason": "See LLM response for details"
+  },
+  {
+    "log_id": "033beb87-bfcc-458f-a477-4a81cd586ca3",
+    "timestamp": "2025-07-15T17:40:29.862434",
+    "session_id": "20250715_173845",
+    "component": "Document Validation",
+    "message": "Validate File User Access Management Policy.pdf",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "User Access Management Policy.pdf",
+      "category": "Governance Document",
+      "reason": null,
+      "evidence": "Umay Solutions \u2013 User Access Management (UAM)\nPolicy & Procedures\nDocument ID: UAM-PL-001\nVersion: 3...",
+      "decision_id": "document_validation_8b8b97f1"
+    }
+  },
+  {
+    "log_id": "3823ee55-6b18-4791-a16f-6ef9c13fbade",
+    "timestamp": "2025-07-15T17:40:29.865048",
+    "session_id": "20250715_173845",
+    "component": "PIP Validation",
+    "message": "Governance Documents Validated: True",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "files": [
+        "User Access Management Policy.pdf"
+      ],
+      "decision_id": "pip_validation_9ecc194d"
+    },
+    "reason": "Files: ['User Access Management Policy.pdf']"
+  },
+  {
+    "log_id": "c0c1167d-bac8-49b8-aad6-162fe73feca3",
+    "timestamp": "2025-07-15T17:40:29.868966",
+    "session_id": "20250715_173845",
+    "component": "UI Interaction",
+    "message": "Validate button clicked",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "ui_interaction_2a138951"
+    }
+  },
+  {
+    "log_id": "1c85b6d3-4247-47b5-bd11-83f1c5650633",
+    "timestamp": "2025-07-15T17:40:29.872983",
+    "session_id": "20250715_173845",
+    "component": "PIP Validation",
+    "message": "Text Inputs Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "user_input": {
+        "control_owner_name": "James Okwiri",
+        "control_owner_title": "VP Engineering",
+        "control_owner_email": "ali16saklani@gmail.com"
+      },
+      "decision_id": "pip_validation_607a32cc"
+    },
+    "reason": "Valid inputs."
+  },
+  {
+    "log_id": "e24b3127-2a1f-44c9-ad34-055a4043975f",
+    "timestamp": "2025-07-15T17:40:45.609670",
+    "session_id": "20250715_173845",
+    "component": "UI Interaction",
+    "message": "SUBMIT button clicked",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "ui_interaction_c8560e65"
+    }
+  },
+  {
+    "log_id": "119e309c-416a-4b80-9365-e858973a746a",
+    "timestamp": "2025-07-15T17:40:45.617196",
+    "session_id": "20250715_173845",
+    "component": "PIP Submission",
+    "message": "Valid documents written to pip_info.txt",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "org_charts": [
+        "Org_chart_v2.pdf",
+        "Org_chart (1).png"
+      ],
+      "governance_docs": [
+        "User Access Management Policy.pdf"
+      ],
+      "decision_id": "pip_submission_a856f51e"
+    },
+    "reason": "Org Charts=['Org_chart_v2.pdf', 'Org_chart (1).png'], Governance Docs=['User Access Management Policy.pdf']"
+  },
+  {
+    "log_id": "22dedd24-33cb-4ecc-8b26-5dc4745d6957",
+    "timestamp": "2025-07-15T17:40:45.622494",
+    "session_id": "20250715_173845",
+    "component": "PIP Submission",
+    "message": "Cleared pip_conclusion.txt",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_submission_b013bac1"
+    }
+  },
+  {
+    "log_id": "b6de9ab8-3752-430c-8484-24e14d3e75e8",
+    "timestamp": "2025-07-15T17:40:45.627462",
+    "session_id": "20250715_173845",
+    "component": "PIP Validation",
+    "message": "Name match found in Org_chart_v2.pdf at line 51",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart_v2.pdf",
+      "line_number": 51,
+      "decision_id": "pip_validation_bf09cbb9"
+    },
+    "reason": "Name 'James Okwiri' found in org chart"
+  },
+  {
+    "log_id": "8e85b1c8-a55e-4b52-a5f9-0321e50b48e1",
+    "timestamp": "2025-07-15T17:40:45.635175",
+    "session_id": "20250715_173845",
+    "component": "PIP Validation",
+    "message": "Title match found in Org_chart_v2.pdf at line 51",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart_v2.pdf",
+      "line_number": 51,
+      "decision_id": "pip_validation_0be198d3"
+    },
+    "reason": "Title 'VP Engineering' matched in org chart"
+  },
+  {
+    "log_id": "5e186955-0376-49e1-a4ca-d1e9861b4ce7",
+    "timestamp": "2025-07-15T17:40:45.643007",
+    "session_id": "20250715_173845",
+    "component": "PIP Submission",
+    "message": "PIP form submitted successfully",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "pip_submission_053686ad"
+    },
+    "reason": "All validations passed, navigating to CDD processing"
+  },
+  {
+    "log_id": "c72409cd-895f-4f99-8175-7b215a2d72a1",
+    "timestamp": "2025-07-15T17:40:46.125990",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Started CDD processing",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_4dcf92d9"
+    }
+  },
+  {
+    "log_id": "fc16be0b-28fe-46e2-9f03-5b5c24a5cdd7",
+    "timestamp": "2025-07-15T17:40:49.355530",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "QA Chain Initialization",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_54c1c860"
+    },
+    "reason": "QA chain initialized successfully"
+  },
+  {
+    "log_id": "fa4ef424-a4df-4d7a-ac6b-7b096e7ca160",
+    "timestamp": "2025-07-15T17:40:49.869671",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Excel File Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_521e1ae6"
+    },
+    "reason": "Excel file loaded successfully"
+  },
+  {
+    "log_id": "bbe7dd1e-e111-4c17-b7bb-722347a9cc39",
+    "timestamp": "2025-07-15T17:40:49.872700",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Session State Initialization",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_c0f1c338"
+    },
+    "reason": "Excel DataFrame initialized"
+  },
+  {
+    "log_id": "e08084f0-65a1-4d99-87d6-a64f0e6ea747",
+    "timestamp": "2025-07-15T17:40:49.881386",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_8a1b7e12"
+    },
+    "reason": "Approver Name column not found in Excel"
+  },
+  {
+    "log_id": "b665d83e-29b3-41d7-8912-6764954912d8",
+    "timestamp": "2025-07-15T17:40:52.194007",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 1: Question=How is a new user access requested? (web form, email request, user access ticket etc.)",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_68366734"
+    },
+    "reason": "Answer=Access Request Form (ARF)"
+  },
+  {
+    "log_id": "025c4d02-ad47-40e8-ad18-417458871af2",
+    "timestamp": "2025-07-15T17:40:55.071805",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 2: Question=How is a request made for change in user access to their existing access? (web form, email request, user access ticket etc.)",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_764b858f"
+    },
+    "reason": "Answer=Access Request Form (ARF)"
+  },
+  {
+    "log_id": "9d506996-d689-4844-91df-a90a9e3accf6",
+    "timestamp": "2025-07-15T17:40:57.316448",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 3: Question=Who can approve a new user access request? Is there a list of approvers?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_39ef73c5"
+    },
+    "reason": "Answer=CRCO, Line Managers"
+  },
+  {
+    "log_id": "2e83e59f-a226-4be8-b490-fe7d1cd0edeb",
+    "timestamp": "2025-07-15T17:40:59.545946",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 4: Question=Who can approve an access change request? Is there a list of approvers?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_cf96e824"
+    },
+    "reason": "Answer=Answer: Line Managers, CRCO"
+  },
+  {
+    "log_id": "409ac139-1554-4725-b8e6-e04b040f0149",
+    "timestamp": "2025-07-15T17:41:02.295399",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 5: Question=Are there any access expiry dates mentioned on the new access request for vendors/contractors (non-employees)",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_2f1c6b26"
+    },
+    "reason": "Answer=Yes, 12 months"
+  },
+  {
+    "log_id": "0ea57768-1ea3-4107-8e1b-65173dd261e8",
+    "timestamp": "2025-07-15T17:41:04.772737",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 6: Question=Whether terms of contract or the project have been extended for contractors for continued access. Any variation to the scope of work or contract which requires modification of access for contractors.",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_e56ea129"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "4d4ce4aa-d1da-45d0-baa9-2d25f6b69191",
+    "timestamp": "2025-07-15T17:41:06.218240",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 7: Question=Where is the new user approval details saved or logged?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_fb85d71c"
+    },
+    "reason": "Answer=Access Records repository"
+  },
+  {
+    "log_id": "b5e4fdc6-5f4a-474b-b5cf-fd8e4c775d26",
+    "timestamp": "2025-07-15T17:41:08.782307",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 8: Question=Where is the change access approval saved or logged?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_4bc0dd7f"
+    },
+    "reason": "Answer=Access Review Archive"
+  },
+  {
+    "log_id": "4a3c5f4e-dfc3-41f0-9986-d567896913bd",
+    "timestamp": "2025-07-15T17:41:11.003914",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 9: Question=How is new user access requested and approved in an emergency. Can new user access be created without an approval in an emergency?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_ce275cbb"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "9c66f2ab-628c-4389-8cf4-9cf8c2cbd2ba",
+    "timestamp": "2025-07-15T17:41:13.709310",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 10: Question=How is modified user access requested and approved in an emergency. Can user access be modified in an emergency without an approval?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_f8cdd448"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "e66d3532-95a0-4f77-94fd-5f6508488460",
+    "timestamp": "2025-07-15T17:41:15.413388",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 11: Question=Does the new user access request mentions exact role(s)/permission(s) requested?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_287a9e65"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "3731d05f-e86d-4eed-937e-2723f3cec45e",
+    "timestamp": "2025-07-15T17:41:17.234157",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 12: Question=Does the change access request mentions exact role(s)/permission(s) requested?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_88673f33"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "07b87e79-2ae0-43d9-9865-f8fca86eb952",
+    "timestamp": "2025-07-15T17:41:18.601661",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 13: Question=Does the emergency access request mentions exact role(s)/permission(s) requested?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_944fad45"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "1ddfdc85-fadb-47bd-9026-cef12dfcb672",
+    "timestamp": "2025-07-15T17:41:20.343864",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 14: Question=Does the document mentions anything regarding created/provisioned access must match the approved new user access request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_cf38cd1a"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "6f9d1bdf-0d73-4010-8892-0ede8541a5ca",
+    "timestamp": "2025-07-15T17:41:22.359645",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 15: Question=Does the document mentions anything regarding created/provisioned access must match the approved change access request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_37a731f5"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "0298dfb5-a925-480f-9f4a-dfc99eb05ca8",
+    "timestamp": "2025-07-15T17:41:24.590523",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 16: Question=Who creates (provisions) the new account access request in the system?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_6e01d0bc"
+    },
+    "reason": "Answer=IT Operations \u2013 Access Administration Team"
+  },
+  {
+    "log_id": "2c88a369-f15f-4766-87b5-28f05a67377e",
+    "timestamp": "2025-07-15T17:41:26.260016",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 17: Question=Who modifies the access change request in the system?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_a3f2be15"
+    },
+    "reason": "Answer=IT Operations \u2013 Access Administration Team"
+  },
+  {
+    "log_id": "cad89125-2b55-4477-8d53-1f546b359d97",
+    "timestamp": "2025-07-15T17:41:28.152034",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 18: Question=Who creates the new account request for emergency access request access?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_fe9bfc88"
+    },
+    "reason": "Answer=Line Managers"
+  },
+  {
+    "log_id": "444788ba-e28d-450e-b8fd-220d0de9ffd2",
+    "timestamp": "2025-07-15T17:41:29.922464",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 19: Question=Segregation check: Are the approver for change access request and the modifier different people/roles?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_3c1ea84b"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "36c87b48-164c-4ff4-bddf-1ffa1f7ead27",
+    "timestamp": "2025-07-15T17:41:31.508756",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 20: Question=Segregation check: Are the new user access approver and the account creator different?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_241a3b7c"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "f6eaa453-02bb-4029-ba0b-f6aebbcc7cd3",
+    "timestamp": "2025-07-15T17:41:33.029184",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 21: Question=Does the system log who created the new account?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_4448957e"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "61f2abd8-844e-465e-85ad-ffd57a439995",
+    "timestamp": "2025-07-15T17:41:34.436089",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 22: Question=Does the system log who modified the account?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_2313cae8"
+    },
+    "reason": "Answer=NotFound"
+  },
+  {
+    "log_id": "a5425f4f-0290-4f50-9c46-c9a1a2c072e2",
+    "timestamp": "2025-07-15T17:41:35.750102",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 23: Question=Is there a final check that created access equals new user access approved request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_04a8b354"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "1857849e-700a-4163-8a34-2090dd0589c4",
+    "timestamp": "2025-07-15T17:41:37.208610",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 24: Question=Is there a final check that modified access equals approved access change request?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_17238f60"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "23f4b3cb-a317-4c14-a607-0d6ffa5dad2b",
+    "timestamp": "2025-07-15T17:41:38.500872",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 25: Question=Does the document explains that granted access aligns with job responsibilities/roles? ",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_ab28a647"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "52736647-09b4-44cb-b9aa-25278ade86c0",
+    "timestamp": "2025-07-15T17:41:40.354938",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Row 26: Question=Is there a segregation of duties conflict assessed while granting/modifying access?",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "sources": "User Access Management Policy.pdf, User Access Management Policy.pdf",
+      "decision_id": "cdd_processing_991798a6"
+    },
+    "reason": "Answer=Yes"
+  },
+  {
+    "log_id": "ad9686f3-1fed-49c7-bf82-b144ea0b94d1",
+    "timestamp": "2025-07-15T17:41:40.641461",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "CDD Text Generation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "text_length": 371,
+      "decision_id": "cdd_processing_ad7bb3fe"
+    },
+    "reason": "CDD text generated from Excel answers"
+  },
+  {
+    "log_id": "71d58da2-a226-457f-8689-7316d7888db1",
+    "timestamp": "2025-07-15T17:41:40.647989",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_1b031ade"
+    },
+    "reason": "Approver Name column not found in Excel"
+  },
+  {
+    "log_id": "226aa38f-9a1d-4948-9315-adbbb64ce200",
+    "timestamp": "2025-07-15T17:41:40.656946",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_b27c0aaa"
+    },
+    "reason": "All approver job titles found in answers"
+  },
+  {
+    "log_id": "26cd15cb-0fc5-4770-9bab-1306b28615b8",
+    "timestamp": "2025-07-15T17:41:40.662485",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Question Processing Completed",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_63d8caba"
+    },
+    "reason": "All questions processed"
+  },
+  {
+    "log_id": "d1440027-5f62-4d87-8636-6fdb47338ddb",
+    "timestamp": "2025-07-15T17:41:40.990809",
+    "session_id": "20250715_173845",
+    "component": "CDD Report",
+    "message": "Saving DOCX: cdd_report_20250715_174140.docx",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\cdd_report_20250715_174140.docx",
+      "decision_id": "cdd_report_b92012f2"
+    },
+    "reason": "DOCX saved successfully"
+  },
+  {
+    "log_id": "b84e86d7-56d8-4920-8f79-cfc725a5c2f8",
+    "timestamp": "2025-07-15T17:41:41.033100",
+    "session_id": "20250715_173845",
+    "component": "CDD Report",
+    "message": "Generated DOCX: cdd_report_20250715_174140.docx",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\cdd_report_20250715_174140.docx",
+      "decision_id": "cdd_report_00497aad"
+    },
+    "reason": "DOCX report generated successfully"
+  },
+  {
+    "log_id": "48e4df4f-7010-43e0-bb30-3d568820960f",
+    "timestamp": "2025-07-15T17:41:41.040627",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Audit Start Check",
+    "level": "WARNING",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "cdd_processing_4dcef7b1"
+    },
+    "reason": "CDD not saved or approver titles not validated"
+  },
+  {
+    "log_id": "9b700eb7-6f35-4bc2-b1b3-4d131b97f7b6",
+    "timestamp": "2025-07-15T17:52:28.478162",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Started CDD processing",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_b36db9d1"
+    }
+  },
+  {
+    "log_id": "e7bcfc01-d313-433f-88bc-a2ec27501aeb",
+    "timestamp": "2025-07-15T17:52:30.777954",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "QA Chain Initialization",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_4cfd64f7"
+    },
+    "reason": "QA chain initialized successfully"
+  },
+  {
+    "log_id": "24e1f43c-7a56-4af1-953e-c9c322419f32",
+    "timestamp": "2025-07-15T17:52:30.840896",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Excel File Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_359757d4"
+    },
+    "reason": "Excel file loaded successfully"
+  },
+  {
+    "log_id": "68fcedec-4f71-4c5c-9324-62f2169ca830",
+    "timestamp": "2025-07-15T17:52:30.855747",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_8892a7b1"
+    },
+    "reason": "Approver Name column not found in Excel"
+  },
+  {
+    "log_id": "613882ab-3ba1-40c3-97b5-b694c2fef5cd",
+    "timestamp": "2025-07-15T17:52:31.261026",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "columns": [
+        "#",
+        "Control design understanding questions",
+        "Answers",
+        "Confirmation of noted answers",
+        "And/Or",
+        "Update the missing information",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12"
+      ],
+      "decision_id": "cdd_processing_19f3a992"
+    },
+    "reason": "Approver Name column not found in Excel"
+  },
+  {
+    "log_id": "c028f419-5aa1-4926-a0bd-1fae84382407",
+    "timestamp": "2025-07-15T17:52:31.272390",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Approver Title Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_49a4ebcb"
+    },
+    "reason": "No missing approver titles after save"
+  },
+  {
+    "log_id": "090cc408-c2b8-4fc0-b62c-debc6bc1a21d",
+    "timestamp": "2025-07-15T17:52:31.405319",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Excel Save",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\sessions\\20250715_173845\\Control Design Document_updated.xlsx",
+      "decision_id": "cdd_processing_fccd5665"
+    },
+    "reason": "Updated Excel saved successfully"
+  },
+  {
+    "log_id": "5fd4f6ca-b343-42c4-bed3-cf3cdedcf1d5",
+    "timestamp": "2025-07-15T17:52:31.654662",
+    "session_id": "20250715_173845",
+    "component": "CDD Report",
+    "message": "Saving DOCX: cdd_report_20250715_175231.docx",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\cdd_report_20250715_175231.docx",
+      "decision_id": "cdd_report_869298c2"
+    },
+    "reason": "DOCX saved successfully"
+  },
+  {
+    "log_id": "0ba54d69-1356-474d-a261-0f9a29fa030f",
+    "timestamp": "2025-07-15T17:52:31.700046",
+    "session_id": "20250715_173845",
+    "component": "CDD Report",
+    "message": "Generated DOCX: cdd_report_20250715_175231.docx",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\cdd_report_20250715_175231.docx",
+      "decision_id": "cdd_report_9a66d0d1"
+    },
+    "reason": "DOCX report generated successfully"
+  },
+  {
+    "log_id": "11ffb512-9800-4888-b89f-0edf6b7a074f",
+    "timestamp": "2025-07-15T17:52:31.709630",
+    "session_id": "20250715_173845",
+    "component": "CDD Processing",
+    "message": "Audit Start Check",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_1da4becb"
+    },
+    "reason": "CDD saved and validated, ready for auditing"
+  },
+  {
+    "log_id": "a3fd799a-7a81-4217-bfe3-71b5cc50cafc",
+    "timestamp": "2025-07-15T17:52:34.771207",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Started audit processing",
+    "level": "INFO"
+  },
+  {
+    "log_id": "c8e40e0d-94f9-4355-a82c-faa743f7c8bf",
+    "timestamp": "2025-07-15T17:52:34.858652",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "CDD Excel Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_fb4992a5"
+    },
+    "reason": "Updated CDD loaded successfully",
+    "source": "File=C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\sessions\\20250715_173845\\Control Design Document_updated.xlsx"
+  },
+  {
+    "log_id": "c6b3eed9-d0ef-418e-8661-9f08577512a1",
+    "timestamp": "2025-07-15T17:52:34.880703",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Org Chart File Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_15f51bb6"
+    },
+    "reason": "Read org chart filenames from pip_info.txt: ['Org_chart_v2.pdf', 'Org_chart (1).png']",
+    "source": "File=C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\pip_info.txt"
+  },
+  {
+    "log_id": "1ff3fa7a-380d-491e-9fa9-1dd42377cfb6",
+    "timestamp": "2025-07-15T17:52:35.045996",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Org Chart Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_0b868618"
+    },
+    "reason": "Organizational chart text extracted",
+    "source": "File=Uploads\\Org_chart_v2.pdf"
+  },
+  {
+    "log_id": "38e5ca3b-8f5c-4a99-a521-64f4a56bd9c7",
+    "timestamp": "2025-07-15T17:52:35.054007",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Testing Data Upload",
+    "level": "INFO",
+    "decision": "Pending",
+    "context": {
+      "decision_id": "audit_processing_47c37901"
+    },
+    "reason": "Waiting for user to upload testing data file"
+  },
+  {
+    "log_id": "85b490be-de26-4567-bd27-10f65c5e01a0",
+    "timestamp": "2025-07-15T17:52:52.479079",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "CDD Excel Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_94df61fd"
+    },
+    "reason": "Updated CDD loaded successfully",
+    "source": "File=C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\sessions\\20250715_173845\\Control Design Document_updated.xlsx"
+  },
+  {
+    "log_id": "602948d7-09a2-4e9b-9fad-9faa90677036",
+    "timestamp": "2025-07-15T17:52:52.491748",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Org Chart File Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_10351cef"
+    },
+    "reason": "Read org chart filenames from pip_info.txt: ['Org_chart_v2.pdf', 'Org_chart (1).png']",
+    "source": "File=C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\pip_info.txt"
+  },
+  {
+    "log_id": "ee498d76-1d5a-49f8-b306-69d73a56ae8e",
+    "timestamp": "2025-07-15T17:52:52.498150",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Org Chart Load",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_87d97348"
+    },
+    "reason": "Organizational chart text extracted",
+    "source": "File=Uploads\\Org_chart_v2.pdf"
+  },
+  {
+    "log_id": "44b7ccdf-5e28-4cfe-aa58-e23a52836ef3",
+    "timestamp": "2025-07-15T17:52:53.203349",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Testing Data Upload",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_f16de69d"
+    },
+    "reason": "Testing data uploaded successfully",
+    "source": "File=testing data.xlsx"
+  },
+  {
+    "log_id": "f691ca07-d7db-41bc-8a2a-1a14695ae00a",
+    "timestamp": "2025-07-15T17:52:53.214057",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Column Mapping",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_155b259e"
+    },
+    "reason": "Mapped columns: {'User ID': 'User ID', 'User Name': 'Role', 'Requested Role': 'Access Requested', 'Approver Name': 'Approver Name', 'Approver Job Title': 'Approver Title', 'Granted Role': 'Access Granted', 'Provisioner Name': 'Granter', 'Line Manager': 'Line Manager', 'Privileges Granted': 'Privileges', 'SOD Check Performed by Mgmt': 'SOD Check Performed by Mgmt'}",
+    "source": "Original columns: ['Date of access created', 'Date of last modified', 'Termination date', 'Ticket ID', 'User ID', 'Role', 'Department', 'Access Requested', 'Requested By', 'Approver Name', 'Approver Title', 'Access Granted', 'Granter', 'Provisioner Role', 'Line Manager', 'Privileges', 'SOD Check Performed by Mgmt']"
+  },
+  {
+    "log_id": "688a23bc-1cac-482a-92a8-908d2ed953e9",
+    "timestamp": "2025-07-15T17:53:07.795244",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U243",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_d83f17b2"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "5603033e-21ec-4d80-b289-23d9109166ea",
+    "timestamp": "2025-07-15T17:53:07.800976",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_a05b944e"
+    },
+    "reason": "Validation passed for User ID U243: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "d63ee23d-d2e2-4e2e-b054-40b2cc258813",
+    "timestamp": "2025-07-15T17:53:07.808065",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_e88c857c"
+    },
+    "reason": "Validation passed for User ID U243: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "4422eb1b-e9d8-464e-ab87-6140c77c25a1",
+    "timestamp": "2025-07-15T17:53:07.814701",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_424aa939"
+    },
+    "reason": "Validation passed for User ID U243: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "b9b7749f-5a24-4f0c-94a1-4034a061bc53",
+    "timestamp": "2025-07-15T17:53:07.820781",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_0dea2496"
+    },
+    "reason": "Validation passed for User ID U243: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "84d552cb-e789-40b7-a54c-c2cf0b2d4b82",
+    "timestamp": "2025-07-15T17:53:09.285134",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U243)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_10d2b101"
+    },
+    "reason": "Validation failed for User ID U243: Granted Access='Software Engineer', Role='Lara Singh', LLM Response: NotFound",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "daace4c2-46a0-4e3c-b804-cc84b8c098b3",
+    "timestamp": "2025-07-15T17:53:09.289727",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U243)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_d9c95fbb"
+    },
+    "reason": "Validation failed for User ID U243: Granted Access='Software Engineer', Role='Lara Singh', LLM Response: NotFound",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "edd4f676-9745-4dce-ab20-1a04ec1399f5",
+    "timestamp": "2025-07-15T17:53:09.294808",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_4051fd1b"
+    },
+    "reason": "Validation passed for User ID U243: Approver Name='Priya Ramesh', Granter Name='Anna Johnson', Approver and granter are different",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "2e51934b-c605-4c66-b53c-d1051227f653",
+    "timestamp": "2025-07-15T17:53:09.299817",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_124ae013"
+    },
+    "reason": "Validation passed for User ID U243: Approver Name='Priya Ramesh', Granter Name='Anna Johnson', Approver and granter are different",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "24a3a848-abf2-4f88-b5d6-7d2b387b80ff",
+    "timestamp": "2025-07-15T17:53:09.306546",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_2871f748"
+    },
+    "reason": "Validation passed for User ID U243: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "3e8c26a2-985a-4df7-aea1-f1fe41ee8dc0",
+    "timestamp": "2025-07-15T17:53:09.314069",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U243)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_5b5d7754"
+    },
+    "reason": "Validation passed for User ID U243: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U243"
+  },
+  {
+    "log_id": "5b2adbc2-e413-4a71-925f-da33040f780a",
+    "timestamp": "2025-07-15T17:53:09.325354",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U067",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_7d91fb87"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "4052757f-d9e8-4e25-beed-f523e3672d80",
+    "timestamp": "2025-07-15T17:53:09.331026",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U067)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_50db0cc4"
+    },
+    "reason": "Validation passed for User ID U067: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "f41b4cd0-b6b3-41dd-9574-29cb6cb7c0b1",
+    "timestamp": "2025-07-15T17:53:09.338518",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U067)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_6be16dcb"
+    },
+    "reason": "Validation passed for User ID U067: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "cebbe989-0088-496e-b962-0940310e52e3",
+    "timestamp": "2025-07-15T17:53:09.345793",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U067)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_70e595b9"
+    },
+    "reason": "Validation passed for User ID U067: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "c40f9122-61ec-4248-a701-ad92ea654bc4",
+    "timestamp": "2025-07-15T17:53:09.352787",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U067)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_cb2b8000"
+    },
+    "reason": "Validation passed for User ID U067: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "4240f13f-fa50-4725-8d3c-c636916f171d",
+    "timestamp": "2025-07-15T17:53:10.664662",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U067)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_a70a3120"
+    },
+    "reason": "Validation failed for User ID U067: Granted Access='Software Engineer', Role='Priya Ramesh', LLM Response: NotFound",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "b5a2e3df-1fe7-4042-b74d-eeca3912c3cc",
+    "timestamp": "2025-07-15T17:53:10.670693",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U067)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_bbdb9f97"
+    },
+    "reason": "Validation failed for User ID U067: Granted Access='Software Engineer', Role='Priya Ramesh', LLM Response: NotFound",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "680c5580-9ccd-488c-a993-de98bed4798b",
+    "timestamp": "2025-07-15T17:53:10.675845",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U067)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_ddc2506c"
+    },
+    "reason": "Validation failed for User ID U067: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "cc577cf6-7bb2-440c-9434-df1355a6321b",
+    "timestamp": "2025-07-15T17:53:10.684529",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U067)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_e57cca4e"
+    },
+    "reason": "Validation failed for User ID U067: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "e4a68c9b-eddf-422c-8cd5-b3c93c1760c2",
+    "timestamp": "2025-07-15T17:53:10.690704",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U067)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_78a13c2b"
+    },
+    "reason": "Validation passed for User ID U067: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "d6383832-df90-4170-8171-6b1fb12d22cf",
+    "timestamp": "2025-07-15T17:53:10.697427",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U067)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_3881b639"
+    },
+    "reason": "Validation passed for User ID U067: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U067"
+  },
+  {
+    "log_id": "ec4c548e-6b45-4f1b-8db4-b446761ebda8",
+    "timestamp": "2025-07-15T17:53:10.707168",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U589",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_d4730c81"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "c873f4ff-51e7-4316-bb01-7a38c4feaff8",
+    "timestamp": "2025-07-15T17:53:10.714968",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U589)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_d487e14d"
+    },
+    "reason": "Validation passed for User ID U589: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "a6b7e29a-8c8a-4e7b-b5bc-8ec49e5305ee",
+    "timestamp": "2025-07-15T17:53:10.722498",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U589)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_38ef271e"
+    },
+    "reason": "Validation passed for User ID U589: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "0f59647c-ed7a-43b9-838d-90c30cf9e096",
+    "timestamp": "2025-07-15T17:53:10.730091",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U589)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_c18d2f3b"
+    },
+    "reason": "Validation passed for User ID U589: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "ba97e0f8-0567-4a27-933d-9b0c5bfafd5c",
+    "timestamp": "2025-07-15T17:53:10.738465",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U589)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_84b2a195"
+    },
+    "reason": "Validation passed for User ID U589: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "f877f51a-9355-47be-b03e-534b17193f07",
+    "timestamp": "2025-07-15T17:53:11.956789",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U589)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_89c38521"
+    },
+    "reason": "Validation failed for User ID U589: Granted Access='Software Engineer', Role='Anna Lee', LLM Response: NotFound",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "794a483c-cbab-45ca-88dc-c9869821e820",
+    "timestamp": "2025-07-15T17:53:11.962975",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U589)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_6d50236c"
+    },
+    "reason": "Validation failed for User ID U589: Granted Access='Software Engineer', Role='Anna Lee', LLM Response: NotFound",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "a75822a9-c0ec-44d5-b20c-f1deed60f02d",
+    "timestamp": "2025-07-15T17:53:11.968495",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U589)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_fb44729a"
+    },
+    "reason": "Validation passed for User ID U589: Approver Name='Priya Ramesh', Granter Name='Aisha Mensah', Approver and granter are different",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "374bbe83-8b1c-46e0-b0cb-2eb3df9a3746",
+    "timestamp": "2025-07-15T17:53:11.974527",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U589)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_e1d0ea08"
+    },
+    "reason": "Validation passed for User ID U589: Approver Name='Priya Ramesh', Granter Name='Aisha Mensah', Approver and granter are different",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "cad7a7f5-b424-4c48-ad3f-6ac3dbdc7b23",
+    "timestamp": "2025-07-15T17:53:11.980908",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U589)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_39b688f8"
+    },
+    "reason": "Validation failed for User ID U589: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "d1b151cc-451e-44ab-9d84-524137f8b8f1",
+    "timestamp": "2025-07-15T17:53:11.994109",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U589)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_112826ab"
+    },
+    "reason": "Validation failed for User ID U589: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U589"
+  },
+  {
+    "log_id": "d4c8b0da-bb34-4dfe-ba9a-b33020594647",
+    "timestamp": "2025-07-15T17:53:12.004655",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U284",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_358b1ac6"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "0df8e683-dcd1-43c7-9521-2f99ac2de807",
+    "timestamp": "2025-07-15T17:53:12.012143",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U284)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_4391fb7b"
+    },
+    "reason": "Validation passed for User ID U284: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "2d8b5543-da1b-430e-9cb0-743d4b1a6a7c",
+    "timestamp": "2025-07-15T17:53:12.020958",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U284)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_eb5828a6"
+    },
+    "reason": "Validation passed for User ID U284: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "f9c97720-bb3b-4a3b-8e43-843223bf12b2",
+    "timestamp": "2025-07-15T17:53:12.028042",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U284)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_229f60f2"
+    },
+    "reason": "Validation passed for User ID U284: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "572a4e0b-2e75-42c3-8066-6d6d9607ec57",
+    "timestamp": "2025-07-15T17:53:12.039949",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U284)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_15673d25"
+    },
+    "reason": "Validation passed for User ID U284: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "8ce9bb3b-7232-48e2-b611-a29f507a4ff3",
+    "timestamp": "2025-07-15T17:53:13.288592",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U284)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_f377344c"
+    },
+    "reason": "Validation failed for User ID U284: Granted Access='Software Engineer', Role='Yusuf Okeke', LLM Response: NotFound",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "ae6daac5-1589-4695-9fad-65d255b99258",
+    "timestamp": "2025-07-15T17:53:13.293967",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U284)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_d584e42f"
+    },
+    "reason": "Validation failed for User ID U284: Granted Access='Software Engineer', Role='Yusuf Okeke', LLM Response: NotFound",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "d593e12f-4a20-4cfd-9a02-b43c2f49ef32",
+    "timestamp": "2025-07-15T17:53:13.300984",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U284)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_836a0c28"
+    },
+    "reason": "Validation failed for User ID U284: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "5de1897b-ef74-46d5-a873-a12c3b49ee81",
+    "timestamp": "2025-07-15T17:53:13.308516",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U284)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_49bd69a2"
+    },
+    "reason": "Validation failed for User ID U284: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "8df5df07-8ce3-4ed6-9cb9-85a73f9edad7",
+    "timestamp": "2025-07-15T17:53:13.317285",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U284)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_083fead6"
+    },
+    "reason": "Validation failed for User ID U284: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "04a09fec-c191-4325-902d-c60e44d269ea",
+    "timestamp": "2025-07-15T17:53:13.326669",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U284)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_5ce6bf63"
+    },
+    "reason": "Validation failed for User ID U284: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U284"
+  },
+  {
+    "log_id": "b4851367-134f-47a1-8b04-87bfcfcca2ed",
+    "timestamp": "2025-07-15T17:53:13.338197",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U064",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_a43254fb"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "8afbb4eb-83bc-4460-b8fa-bd16987975f0",
+    "timestamp": "2025-07-15T17:53:13.347845",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U064)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_d1c23b6f"
+    },
+    "reason": "Validation passed for User ID U064: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "fa28ddc0-062e-4942-9e17-26c0de744aa3",
+    "timestamp": "2025-07-15T17:53:13.360732",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U064)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_91358263"
+    },
+    "reason": "Validation passed for User ID U064: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "4bc6e174-7c04-4b4c-8f8c-53145229d962",
+    "timestamp": "2025-07-15T17:53:15.134902",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U064)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_c6d37bb1"
+    },
+    "reason": "Validation failed for User ID U064: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "2bfd1ac1-8916-4f8d-9c8e-87320064e7e2",
+    "timestamp": "2025-07-15T17:53:15.142954",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U064)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_0521a5e0"
+    },
+    "reason": "Validation failed for User ID U064: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "bfe1c393-cc43-4e01-9fc3-b0e961a48aa9",
+    "timestamp": "2025-07-15T17:53:16.370106",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U064)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_227b323c"
+    },
+    "reason": "Validation failed for User ID U064: Granted Access='DevOps Engineer', Role='Hiroshi Wong', LLM Response: NotFound",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "1c36070b-29bf-4646-b4f3-3aefe3f53669",
+    "timestamp": "2025-07-15T17:53:16.379643",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U064)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_2653c130"
+    },
+    "reason": "Validation failed for User ID U064: Granted Access='DevOps Engineer', Role='Hiroshi Wong', LLM Response: NotFound",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "aab9b495-1079-4553-b40a-7003473a6e03",
+    "timestamp": "2025-07-15T17:53:16.389713",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U064)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_709b8d86"
+    },
+    "reason": "Validation passed for User ID U064: Approver Name='Priya Ramesh', Granter Name='Lara Johnson', Approver and granter are different",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "ae29a5dc-c35f-4738-be1c-2b80e6e60469",
+    "timestamp": "2025-07-15T17:53:16.399346",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U064)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_6a710bbb"
+    },
+    "reason": "Validation passed for User ID U064: Approver Name='Priya Ramesh', Granter Name='Lara Johnson', Approver and granter are different",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "f6abed7c-061f-4f56-8c19-0aa7142874b8",
+    "timestamp": "2025-07-15T17:53:16.408660",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U064)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_065fba3a"
+    },
+    "reason": "Validation passed for User ID U064: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "ccdf26b5-5ee7-4063-b155-535f4cdfd277",
+    "timestamp": "2025-07-15T17:53:16.419641",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U064)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_a8f82ea5"
+    },
+    "reason": "Validation passed for User ID U064: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U064"
+  },
+  {
+    "log_id": "5a9857ab-01c1-4f8c-821c-d60c3a4af91c",
+    "timestamp": "2025-07-15T17:53:16.431066",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U408",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_5921ceb6"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "afac49b2-ba2a-4c0a-b6e4-ae99f2965ecd",
+    "timestamp": "2025-07-15T17:53:16.439760",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U408)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_6b545490"
+    },
+    "reason": "Validation passed for User ID U408: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "e4f4fb24-db7c-466a-98db-4bc7d619e923",
+    "timestamp": "2025-07-15T17:53:16.451055",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U408)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_b86d8ca4"
+    },
+    "reason": "Validation passed for User ID U408: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "898c7ce8-7020-4b16-84bd-7a6075580f4c",
+    "timestamp": "2025-07-15T17:53:17.526624",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U408)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_9604407d"
+    },
+    "reason": "Validation failed for User ID U408: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "b67640a9-0593-4760-94dd-7284fc4b4296",
+    "timestamp": "2025-07-15T17:53:17.534889",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U408)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_bcb0a7a8"
+    },
+    "reason": "Validation failed for User ID U408: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "af87af9d-f121-4e09-9472-9afa804937cf",
+    "timestamp": "2025-07-15T17:53:18.666827",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U408)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_1f17b50e"
+    },
+    "reason": "Validation failed for User ID U408: Granted Access='DevOps Engineer', Role='Omar Lee', LLM Response: NotFound",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "d376cded-b255-4a66-8e00-52070893addf",
+    "timestamp": "2025-07-15T17:53:18.675891",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U408)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_7581a217"
+    },
+    "reason": "Validation failed for User ID U408: Granted Access='DevOps Engineer', Role='Omar Lee', LLM Response: NotFound",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "1256de63-1029-4807-b6d6-25a9f95fa836",
+    "timestamp": "2025-07-15T17:53:18.686958",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U408)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_3ac49612"
+    },
+    "reason": "Validation failed for User ID U408: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "4f103bd2-fd5a-4e9d-b6b1-84a95ff60e6f",
+    "timestamp": "2025-07-15T17:53:18.696074",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U408)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_cafccf8a"
+    },
+    "reason": "Validation failed for User ID U408: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "48a53b9b-67c4-48be-9ee8-9f773e15173b",
+    "timestamp": "2025-07-15T17:53:18.704673",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U408)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_00c31a0e"
+    },
+    "reason": "Validation passed for User ID U408: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "352e8a1b-49d5-4c28-946a-6ee3e0bda946",
+    "timestamp": "2025-07-15T17:53:18.714912",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U408)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_fd4a24f6"
+    },
+    "reason": "Validation passed for User ID U408: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U408"
+  },
+  {
+    "log_id": "b3b98340-c594-43a9-8f88-e9a25a7309c4",
+    "timestamp": "2025-07-15T17:53:18.729879",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U009",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_5d9b08ec"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "546d6ec3-42c5-4200-a3ad-9a8797704d84",
+    "timestamp": "2025-07-15T17:53:18.740246",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U009)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_2254e5cf"
+    },
+    "reason": "Validation passed for User ID U009: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "acf23819-6666-4d0e-99ed-bf4eb41e0dea",
+    "timestamp": "2025-07-15T17:53:18.752057",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U009)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_d9eae5df"
+    },
+    "reason": "Validation passed for User ID U009: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "d82e130f-a877-4a94-956e-385f60b14981",
+    "timestamp": "2025-07-15T17:53:20.016765",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U009)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_25f1023a"
+    },
+    "reason": "Validation failed for User ID U009: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "2d625a8e-94fc-4ae2-a499-9957608245f2",
+    "timestamp": "2025-07-15T17:53:20.023309",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U009)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_b44f04ed"
+    },
+    "reason": "Validation failed for User ID U009: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "1921c4d8-1a4a-4a46-9fb8-b96b1c1d1538",
+    "timestamp": "2025-07-15T17:53:21.152840",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U009)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_af6a20d5"
+    },
+    "reason": "Validation failed for User ID U009: Granted Access='DevOps Engineer', Role='Nadia Hernandez', LLM Response: NotFound",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "737959b6-010d-4886-95b3-34fe47bf1caf",
+    "timestamp": "2025-07-15T17:53:21.164045",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U009)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_23e974d2"
+    },
+    "reason": "Validation failed for User ID U009: Granted Access='DevOps Engineer', Role='Nadia Hernandez', LLM Response: NotFound",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "c4a377b4-880f-4bb6-8158-ae5bf4824bc9",
+    "timestamp": "2025-07-15T17:53:21.176691",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U009)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_a46f1e3d"
+    },
+    "reason": "Validation passed for User ID U009: Approver Name='Priya Ramesh', Granter Name='Fatima Tanaka', Approver and granter are different",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "caa459f5-dd7c-496a-a50a-e548a9457b56",
+    "timestamp": "2025-07-15T17:53:21.186787",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U009)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_be240226"
+    },
+    "reason": "Validation passed for User ID U009: Approver Name='Priya Ramesh', Granter Name='Fatima Tanaka', Approver and granter are different",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "564a4d1f-9158-4d76-bb8d-82383b3b2e59",
+    "timestamp": "2025-07-15T17:53:21.203531",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U009)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_ef2a53c2"
+    },
+    "reason": "Validation failed for User ID U009: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "c579248d-b220-40ee-b984-08bd556fb0bb",
+    "timestamp": "2025-07-15T17:53:21.221097",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U009)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_285bffed"
+    },
+    "reason": "Validation failed for User ID U009: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U009"
+  },
+  {
+    "log_id": "d8e030dc-749e-403e-9b9e-8fae1e597596",
+    "timestamp": "2025-07-15T17:53:21.255178",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U804",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_255073bf"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "b4969b14-0f94-46dd-8d12-516eb917a1c5",
+    "timestamp": "2025-07-15T17:53:21.270926",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U804)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_87a0e95b"
+    },
+    "reason": "Validation passed for User ID U804: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "67497afb-612b-4804-b5c3-47f0b9168e0b",
+    "timestamp": "2025-07-15T17:53:21.287718",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U804)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_93064761"
+    },
+    "reason": "Validation passed for User ID U804: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "caf782fb-1e0d-4554-92b1-f8e16754a283",
+    "timestamp": "2025-07-15T17:53:22.830106",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_489b8151"
+    },
+    "reason": "Validation failed for User ID U804: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "71c2c460-6a97-4921-acf9-80228c6809d1",
+    "timestamp": "2025-07-15T17:53:22.838887",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_a0f33a7c"
+    },
+    "reason": "Validation failed for User ID U804: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "a3938289-850c-47df-bf52-cd828e7b69e4",
+    "timestamp": "2025-07-15T17:53:24.033651",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_2051d376"
+    },
+    "reason": "Validation failed for User ID U804: Granted Access='DevOps Engineer', Role='Ada Kim', LLM Response: NotFound",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "31ee965f-4061-4047-a725-381e4139aed3",
+    "timestamp": "2025-07-15T17:53:24.045732",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_64a29b34"
+    },
+    "reason": "Validation failed for User ID U804: Granted Access='DevOps Engineer', Role='Ada Kim', LLM Response: NotFound",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "4678f182-bf68-4a2c-84f9-fde90a1041e4",
+    "timestamp": "2025-07-15T17:53:24.055799",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_f98df1e3"
+    },
+    "reason": "Validation failed for User ID U804: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "a1ca457b-360a-4c18-87a4-761363c730a3",
+    "timestamp": "2025-07-15T17:53:24.067347",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_a549d1ce"
+    },
+    "reason": "Validation failed for User ID U804: Approver Name='Priya Ramesh', Granter Name='Priya Ramesh', Approver and granter are the same",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "4d147d6a-34c9-4d8b-adec-764bb1514f9a",
+    "timestamp": "2025-07-15T17:53:24.082629",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_509e0af8"
+    },
+    "reason": "Validation failed for User ID U804: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "d18638a8-6cae-47ae-9be5-93a4d7573e1d",
+    "timestamp": "2025-07-15T17:53:24.094572",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U804)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_826f6d53"
+    },
+    "reason": "Validation failed for User ID U804: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U804"
+  },
+  {
+    "log_id": "3c889233-8bba-46fc-82ba-2a11ca762160",
+    "timestamp": "2025-07-15T17:53:37.132371",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U996",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_7a48b983"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "11b59f88-4c86-4a31-becd-620790e099f1",
+    "timestamp": "2025-07-15T17:53:37.141663",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U996)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_1855d1a0"
+    },
+    "reason": "Validation failed for User ID U996: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "3d5f0b32-a50f-40c6-9bdb-4e3664f2f081",
+    "timestamp": "2025-07-15T17:53:37.150921",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U996)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_ebd496d3"
+    },
+    "reason": "Validation failed for User ID U996: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "43d4ed45-e25e-47a4-8edf-d4d4b30843d7",
+    "timestamp": "2025-07-15T17:53:37.160404",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U996)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_858591fb"
+    },
+    "reason": "Validation passed for User ID U996: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "2f3d1f64-3871-49f1-92ae-18e8229044f1",
+    "timestamp": "2025-07-15T17:53:37.177389",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U996)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_b0a5d49c"
+    },
+    "reason": "Validation passed for User ID U996: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "a19f87f2-59c9-432b-be11-921e4446ec51",
+    "timestamp": "2025-07-15T17:53:38.197821",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U996)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_a39fff1c"
+    },
+    "reason": "Validation failed for User ID U996: Granted Access='Software Engineer', Role='Sofia Patel', LLM Response: NotFound",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "a5454fe4-5180-4f98-bffa-8512479cc5b8",
+    "timestamp": "2025-07-15T17:53:38.205021",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U996)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_20b3d24d"
+    },
+    "reason": "Validation failed for User ID U996: Granted Access='Software Engineer', Role='Sofia Patel', LLM Response: NotFound",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "b01b3cc7-503d-4f80-b1d1-9c4b9ebb524b",
+    "timestamp": "2025-07-15T17:53:38.212166",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U996)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_3fa4632f"
+    },
+    "reason": "Validation passed for User ID U996: Approver Name='Anna Chen', Granter Name='Hiroshi Ibrahim', Approver and granter are different",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "1790e86c-373e-42af-900c-3b42e07c3996",
+    "timestamp": "2025-07-15T17:53:38.223872",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U996)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_1c1b7a14"
+    },
+    "reason": "Validation passed for User ID U996: Approver Name='Anna Chen', Granter Name='Hiroshi Ibrahim', Approver and granter are different",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "4acc9622-ce47-4301-bb15-b8781d2b7d6e",
+    "timestamp": "2025-07-15T17:53:38.237529",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U996)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_cc32e235"
+    },
+    "reason": "Validation passed for User ID U996: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "171497c2-2fc8-4570-b12f-81d198d6729f",
+    "timestamp": "2025-07-15T17:53:38.248316",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U996)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_5bd83017"
+    },
+    "reason": "Validation passed for User ID U996: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U996"
+  },
+  {
+    "log_id": "7268a644-c1ab-47e5-a570-9182b1c80ffc",
+    "timestamp": "2025-07-15T17:53:50.099004",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U716",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_065cc917"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "00bc0600-6ffc-412c-a58b-19478329d5bc",
+    "timestamp": "2025-07-15T17:53:50.109568",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U716)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_9b90e589"
+    },
+    "reason": "Validation failed for User ID U716: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "cc3dd57e-0698-4b84-a7c9-adbc2b4c8b4e",
+    "timestamp": "2025-07-15T17:53:50.123670",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U716)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_f7cc00c6"
+    },
+    "reason": "Validation failed for User ID U716: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "178d6efe-8f0f-4560-9040-0b2cacdf074c",
+    "timestamp": "2025-07-15T17:53:50.137267",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U716)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_dba04759"
+    },
+    "reason": "Validation passed for User ID U716: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "510cf84e-2d77-4053-9111-dbd8996192f4",
+    "timestamp": "2025-07-15T17:53:50.148888",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U716)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_563e6f3c"
+    },
+    "reason": "Validation passed for User ID U716: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "e7f7ab3e-c960-429c-8ab6-6775af19415f",
+    "timestamp": "2025-07-15T17:53:51.332590",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U716)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_1d28e56d"
+    },
+    "reason": "Validation failed for User ID U716: Granted Access='Software Engineer', Role='Wei Rossi', LLM Response: NotFound",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "c112bb50-bc72-41e9-89f9-bf935fcc4b08",
+    "timestamp": "2025-07-15T17:53:51.344952",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U716)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_aa5c495c"
+    },
+    "reason": "Validation failed for User ID U716: Granted Access='Software Engineer', Role='Wei Rossi', LLM Response: NotFound",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "7906b944-fe7f-4991-b4ff-8c1df61543a7",
+    "timestamp": "2025-07-15T17:53:51.358179",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U716)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_1cc3d2e6"
+    },
+    "reason": "Validation failed for User ID U716: Approver Name='Lara Hernandez', Granter Name='Lara Hernandez', Approver and granter are the same",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "41cdcd36-5077-46d7-99c1-7742d6c7a80e",
+    "timestamp": "2025-07-15T17:53:51.373225",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U716)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_771abf1b"
+    },
+    "reason": "Validation failed for User ID U716: Approver Name='Lara Hernandez', Granter Name='Lara Hernandez', Approver and granter are the same",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "f9007b27-e73e-43a2-ae86-691ca018aec7",
+    "timestamp": "2025-07-15T17:53:51.383794",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U716)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_689baacf"
+    },
+    "reason": "Validation passed for User ID U716: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "3b584861-9598-4bfa-8936-67c1a8061c63",
+    "timestamp": "2025-07-15T17:53:51.397433",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U716)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_176d6508"
+    },
+    "reason": "Validation passed for User ID U716: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U716"
+  },
+  {
+    "log_id": "3e009fc3-bcfe-49a2-8e95-71bd3164e61a",
+    "timestamp": "2025-07-15T17:54:02.271784",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U142",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_618b9bf7"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "fdc394e9-cc39-4432-a1d7-2c9ca32cbd3f",
+    "timestamp": "2025-07-15T17:54:02.285572",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U142)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_d73502d1"
+    },
+    "reason": "Validation failed for User ID U142: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "3c13d335-4167-486f-a450-9f8544b153af",
+    "timestamp": "2025-07-15T17:54:02.298622",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U142)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_442db0d2"
+    },
+    "reason": "Validation failed for User ID U142: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "74435831-1163-480f-8438-83683a1e7dda",
+    "timestamp": "2025-07-15T17:54:02.315822",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U142)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_a9a02033"
+    },
+    "reason": "Validation passed for User ID U142: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "63ceddc7-56e7-40b1-b2df-3389c236830f",
+    "timestamp": "2025-07-15T17:54:02.329889",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U142)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_f8563600"
+    },
+    "reason": "Validation passed for User ID U142: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "3beb1085-2780-4091-b255-2f578217b439",
+    "timestamp": "2025-07-15T17:54:05.095037",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U142)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_4ee414c2"
+    },
+    "reason": "Validation failed for User ID U142: Granted Access='Software Engineer', Role='Olivia Ibrahim', LLM Response: NotFound",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "8e04c082-717d-4473-9b53-067bc5744716",
+    "timestamp": "2025-07-15T17:54:05.104883",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U142)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_b87fd2f1"
+    },
+    "reason": "Validation failed for User ID U142: Granted Access='Software Engineer', Role='Olivia Ibrahim', LLM Response: NotFound",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "247d9d66-6164-45c2-957d-545f083af897",
+    "timestamp": "2025-07-15T17:54:05.119637",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U142)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_f635469c"
+    },
+    "reason": "Validation passed for User ID U142: Approver Name='Olivia Hernandez', Granter Name='Kwame Singh', Approver and granter are different",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "7aa86645-12c0-4978-b590-822df3421eb3",
+    "timestamp": "2025-07-15T17:54:05.136567",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U142)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_feafce8c"
+    },
+    "reason": "Validation passed for User ID U142: Approver Name='Olivia Hernandez', Granter Name='Kwame Singh', Approver and granter are different",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "547defa8-e537-415c-b22b-c526b97d8d83",
+    "timestamp": "2025-07-15T17:54:05.150842",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U142)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_90bd55c6"
+    },
+    "reason": "Validation failed for User ID U142: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "1705c44a-ce77-4ee3-9597-59afb295b573",
+    "timestamp": "2025-07-15T17:54:05.164771",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U142)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_f61a1ea8"
+    },
+    "reason": "Validation failed for User ID U142: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U142"
+  },
+  {
+    "log_id": "64a8205b-977a-4880-b2f9-c16eb5a47cb4",
+    "timestamp": "2025-07-15T17:54:18.275777",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U306",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_fb6e4346"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "16e4657c-4b4c-4c53-8d40-8e43e9a72384",
+    "timestamp": "2025-07-15T17:54:18.286204",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_9422b195"
+    },
+    "reason": "Validation failed for User ID U306: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "4cacefc0-4305-4041-b02c-06bf2ab4afde",
+    "timestamp": "2025-07-15T17:54:18.298586",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_58437d84"
+    },
+    "reason": "Validation failed for User ID U306: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "8e6b6f8d-f732-4305-833b-2e249bdcdfe9",
+    "timestamp": "2025-07-15T17:54:18.309689",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U306)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_597baabb"
+    },
+    "reason": "Validation passed for User ID U306: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "d4c4d225-8c17-4ee2-a841-8bbbd56bca7f",
+    "timestamp": "2025-07-15T17:54:18.325493",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U306)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_04b2dd2e"
+    },
+    "reason": "Validation passed for User ID U306: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "28263955-696d-42e5-9a68-1d42edb2a6c4",
+    "timestamp": "2025-07-15T17:54:19.373669",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_eb6ffd0f"
+    },
+    "reason": "Validation failed for User ID U306: Granted Access='Software Engineer', Role='Grace Zhang', LLM Response: NotFound",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "7fa2fbc8-7d02-4d70-8cd7-6d55083ccb79",
+    "timestamp": "2025-07-15T17:54:19.385661",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_c0b526a5"
+    },
+    "reason": "Validation failed for User ID U306: Granted Access='Software Engineer', Role='Grace Zhang', LLM Response: NotFound",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "7b5a0a53-0a65-4b68-be21-075a1a157f49",
+    "timestamp": "2025-07-15T17:54:19.398177",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_e1087553"
+    },
+    "reason": "Validation failed for User ID U306: Approver Name='Yusuf Khan', Granter Name='Yusuf Khan', Approver and granter are the same",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "b4bc0af6-6712-4be4-b8a0-9d3e1aa166d1",
+    "timestamp": "2025-07-15T17:54:19.408931",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_1eaa9180"
+    },
+    "reason": "Validation failed for User ID U306: Approver Name='Yusuf Khan', Granter Name='Yusuf Khan', Approver and granter are the same",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "015a4d68-524e-4285-9a38-d81467442dc4",
+    "timestamp": "2025-07-15T17:54:19.423123",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_e9922c88"
+    },
+    "reason": "Validation failed for User ID U306: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "81d55e1c-c63d-41f3-b223-a30e30c2c1e6",
+    "timestamp": "2025-07-15T17:54:19.436902",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U306)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_3670b383"
+    },
+    "reason": "Validation failed for User ID U306: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U306"
+  },
+  {
+    "log_id": "932a2326-e41d-48e1-a350-309acbd922c8",
+    "timestamp": "2025-07-15T17:54:31.518228",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U252",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_6c938eed"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "bb304ddb-ed52-490d-a8f3-e056e8c53f61",
+    "timestamp": "2025-07-15T17:54:31.526273",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U252)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_fc4aa7df"
+    },
+    "reason": "Validation failed for User ID U252: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "a04d6b3e-d639-4941-9a71-96cfb1e08d41",
+    "timestamp": "2025-07-15T17:54:31.537072",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U252)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_33673dae"
+    },
+    "reason": "Validation failed for User ID U252: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "2672c7c8-19b5-4b4d-8f24-ea4e954d40fe",
+    "timestamp": "2025-07-15T17:54:32.807154",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U252)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_843685cc"
+    },
+    "reason": "Validation failed for User ID U252: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "198a9f98-699b-4eaa-ae9c-10d084e9e886",
+    "timestamp": "2025-07-15T17:54:32.816049",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U252)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_ee9901ad"
+    },
+    "reason": "Validation failed for User ID U252: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "4848cc7e-ea3f-448d-bc28-f28ef53e9bf1",
+    "timestamp": "2025-07-15T17:54:34.086479",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U252)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_e999a00e"
+    },
+    "reason": "Validation failed for User ID U252: Granted Access='DevOps Engineer', Role='Fatima Gonzalez', LLM Response: NotFound",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "60eb2f72-20c7-481e-bee6-d241ed59dc27",
+    "timestamp": "2025-07-15T17:54:34.093948",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U252)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_50d42171"
+    },
+    "reason": "Validation failed for User ID U252: Granted Access='DevOps Engineer', Role='Fatima Gonzalez', LLM Response: NotFound",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "46b67511-75b9-442e-b782-f68e624a86ae",
+    "timestamp": "2025-07-15T17:54:34.105638",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U252)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_790af2e2"
+    },
+    "reason": "Validation passed for User ID U252: Approver Name='Grace Patel', Granter Name='Diego Baker', Approver and granter are different",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "597dcfaa-5159-4a39-8e86-55ba55edae4a",
+    "timestamp": "2025-07-15T17:54:34.117004",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U252)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_de30d803"
+    },
+    "reason": "Validation passed for User ID U252: Approver Name='Grace Patel', Granter Name='Diego Baker', Approver and granter are different",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "dd3b186e-f41e-49d8-8793-ce129d9832b5",
+    "timestamp": "2025-07-15T17:54:34.124645",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U252)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_c064cd5d"
+    },
+    "reason": "Validation passed for User ID U252: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "9c32cb1d-e1c1-430e-9644-ed8d441598af",
+    "timestamp": "2025-07-15T17:54:34.134596",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U252)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_8a093796"
+    },
+    "reason": "Validation passed for User ID U252: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U252"
+  },
+  {
+    "log_id": "f8e49199-8bfe-4d1d-ae52-fae02f3893d6",
+    "timestamp": "2025-07-15T17:54:46.595760",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U783",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_cc792bc9"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "5ad94881-0001-4351-810f-ed53fd09600b",
+    "timestamp": "2025-07-15T17:54:46.604050",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_5b1a30f8"
+    },
+    "reason": "Validation failed for User ID U783: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "63e9af72-d7dd-42a3-92f4-cff38a65890d",
+    "timestamp": "2025-07-15T17:54:46.613595",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_71048ccb"
+    },
+    "reason": "Validation failed for User ID U783: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "2c43167b-4b17-448a-9e1d-71b32738165e",
+    "timestamp": "2025-07-15T17:54:47.695800",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_db4b78ec"
+    },
+    "reason": "Validation failed for User ID U783: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "aaf68b21-d997-4168-84af-3ec8042a42c5",
+    "timestamp": "2025-07-15T17:54:47.705069",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_e4f37cd5"
+    },
+    "reason": "Validation failed for User ID U783: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "04c39e36-a94d-45c8-a735-162fdcc4b012",
+    "timestamp": "2025-07-15T17:54:48.944135",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_af4683e2"
+    },
+    "reason": "Validation failed for User ID U783: Granted Access='DevOps Engineer', Role='Diego Tanaka', LLM Response: NotFound",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "3467ed3b-0ad9-4db0-b965-cf14812217d6",
+    "timestamp": "2025-07-15T17:54:48.961606",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_1e660f17"
+    },
+    "reason": "Validation failed for User ID U783: Granted Access='DevOps Engineer', Role='Diego Tanaka', LLM Response: NotFound",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "5d789f4f-6b50-40de-8055-a3e94fcf4477",
+    "timestamp": "2025-07-15T17:54:48.976918",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_f5a1f228"
+    },
+    "reason": "Validation failed for User ID U783: Approver Name='Ada Ibrahim', Granter Name='Ada Ibrahim', Approver and granter are the same",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "408daafe-e8d9-4a31-986d-42076a5c28ac",
+    "timestamp": "2025-07-15T17:54:48.993679",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U783)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_dcda0d35"
+    },
+    "reason": "Validation failed for User ID U783: Approver Name='Ada Ibrahim', Granter Name='Ada Ibrahim', Approver and granter are the same",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "c6a75c87-a79d-4f1d-be8a-364d26c8122d",
+    "timestamp": "2025-07-15T17:54:49.011432",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U783)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_eac4d724"
+    },
+    "reason": "Validation passed for User ID U783: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "9a373791-a1e7-484e-9a2c-d4699831d73c",
+    "timestamp": "2025-07-15T17:54:49.033019",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U783)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_2f116d82"
+    },
+    "reason": "Validation passed for User ID U783: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U783"
+  },
+  {
+    "log_id": "d0c535d5-d280-4c38-8cdc-bcf14b5aacdb",
+    "timestamp": "2025-07-15T17:55:05.556004",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U321",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_b2a87a61"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "dc7c1289-b363-4b69-83ee-542f48190ef6",
+    "timestamp": "2025-07-15T17:55:05.564955",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_541a7074"
+    },
+    "reason": "Validation failed for User ID U321: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "dbab48a7-3b7c-4b9a-b6f3-907c2a2a815b",
+    "timestamp": "2025-07-15T17:55:05.577828",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_1c4bf3a0"
+    },
+    "reason": "Validation failed for User ID U321: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "6a1e124e-2d7a-4a57-8e79-8c42279fdbe7",
+    "timestamp": "2025-07-15T17:55:06.763762",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_69d7e4e9"
+    },
+    "reason": "Validation failed for User ID U321: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "fc3a0a1b-1d07-4f5d-9828-f67891cd50ca",
+    "timestamp": "2025-07-15T17:55:06.774824",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_12e79769"
+    },
+    "reason": "Validation failed for User ID U321: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "84d189d1-0851-4da5-86eb-a4d18f0aecc8",
+    "timestamp": "2025-07-15T17:55:07.917760",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_46907531"
+    },
+    "reason": "Validation failed for User ID U321: Granted Access='DevOps Engineer', Role='Omar Patel', LLM Response: NotFound",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "cc3ea3ca-4e1c-407f-bfeb-b1aa9300ed36",
+    "timestamp": "2025-07-15T17:55:07.930024",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_170a96a8"
+    },
+    "reason": "Validation failed for User ID U321: Granted Access='DevOps Engineer', Role='Omar Patel', LLM Response: NotFound",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "0041a0c8-c549-43bc-87b8-e54d019e3aed",
+    "timestamp": "2025-07-15T17:55:07.943114",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U321)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_317d213d"
+    },
+    "reason": "Validation passed for User ID U321: Approver Name='Sofia Baker', Granter Name='Yusuf Patel', Approver and granter are different",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "224cd354-024c-452a-bb05-dc7e6526e721",
+    "timestamp": "2025-07-15T17:55:07.960765",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U321)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_8854679c"
+    },
+    "reason": "Validation passed for User ID U321: Approver Name='Sofia Baker', Granter Name='Yusuf Patel', Approver and granter are different",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "6156a9b0-e8f9-45d3-b25f-6769081ea4cb",
+    "timestamp": "2025-07-15T17:55:07.975820",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_51606778"
+    },
+    "reason": "Validation failed for User ID U321: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "064d1771-3361-4142-9657-4b14e220e8aa",
+    "timestamp": "2025-07-15T17:55:07.993260",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U321)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_e67ad309"
+    },
+    "reason": "Validation failed for User ID U321: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U321"
+  },
+  {
+    "log_id": "d80c5b7c-93a6-45d1-945d-744a85a0798c",
+    "timestamp": "2025-07-15T17:55:20.086153",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U212",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_480c8e88"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "5957756b-3947-495d-8db5-1e5bdc033ea5",
+    "timestamp": "2025-07-15T17:55:20.099196",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_c01346b3"
+    },
+    "reason": "Validation failed for User ID U212: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "1ce03216-c360-4853-b8a9-5d2573d9fe7d",
+    "timestamp": "2025-07-15T17:55:20.118450",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_6ac20fda"
+    },
+    "reason": "Validation failed for User ID U212: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "f6462156-2517-495f-8d8b-9efab7add500",
+    "timestamp": "2025-07-15T17:55:21.251638",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_d5173b27"
+    },
+    "reason": "Validation failed for User ID U212: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "15379524-1a7a-46c2-9592-e3b0dd5f509d",
+    "timestamp": "2025-07-15T17:55:21.261056",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_816a26f9"
+    },
+    "reason": "Validation failed for User ID U212: Requested Access='Software Engineer', Granted Access='DevOps Engineer', LLM Response: NotFound",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "79939125-7f75-4364-89ac-8425bb0af038",
+    "timestamp": "2025-07-15T17:55:22.571571",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_076629dc"
+    },
+    "reason": "Validation failed for User ID U212: Granted Access='DevOps Engineer', Role='Omar Gonzalez', LLM Response: NotFound",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "aefaba43-7dad-411e-b94e-74db8094710b",
+    "timestamp": "2025-07-15T17:55:22.587372",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_886013e6"
+    },
+    "reason": "Validation failed for User ID U212: Granted Access='DevOps Engineer', Role='Omar Gonzalez', LLM Response: NotFound",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "6c8397fc-41d0-49a0-bbc0-43de4590e75c",
+    "timestamp": "2025-07-15T17:55:22.597772",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_f0f2a96b"
+    },
+    "reason": "Validation failed for User ID U212: Approver Name='Omar Mensah', Granter Name='Omar Mensah', Approver and granter are the same",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "eacfdd63-b434-42d9-9876-ecf4c6496261",
+    "timestamp": "2025-07-15T17:55:22.615006",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_4dd63fbc"
+    },
+    "reason": "Validation failed for User ID U212: Approver Name='Omar Mensah', Granter Name='Omar Mensah', Approver and granter are the same",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "0445f283-f389-46a6-ab06-f6da88502eae",
+    "timestamp": "2025-07-15T17:55:22.629968",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_4e9dc253"
+    },
+    "reason": "Validation failed for User ID U212: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "05435fe6-b87d-4030-b3d5-ef51aa9fef24",
+    "timestamp": "2025-07-15T17:55:22.648067",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U212)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_0f3fddc1"
+    },
+    "reason": "Validation failed for User ID U212: Unknown privileges: Application Modification; Move Application Changes into Production",
+    "source": "User ID=U212"
+  },
+  {
+    "log_id": "605eed90-6309-4bf3-b146-2d7845dd037a",
+    "timestamp": "2025-07-15T17:55:22.661864",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U457",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_7923bb61"
+    },
+    "reason": "Approver title Chief Technology Officer is managerial in organizational chart",
+    "source": "Org Chart Response=Yes"
+  },
+  {
+    "log_id": "5c2da765-4531-4688-94e2-54dea2dd84b0",
+    "timestamp": "2025-07-15T17:55:22.678242",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_7c5259d2"
+    },
+    "reason": "Validation passed for User ID U457: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "2358baea-877d-494f-8b9f-0ae6106f2c2e",
+    "timestamp": "2025-07-15T17:55:22.694788",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_9e712744"
+    },
+    "reason": "Validation passed for User ID U457: Approver Title='Chief Technology Officer' is managerial per organizational chart: Yes",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "234ba484-31f9-4298-a31b-518e348f258a",
+    "timestamp": "2025-07-15T17:55:22.712566",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_fc4fcb40"
+    },
+    "reason": "Validation passed for User ID U457: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "89ca97ae-e68d-4500-ba59-9ec20bb41e8c",
+    "timestamp": "2025-07-15T17:55:22.732277",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_aff47831"
+    },
+    "reason": "Validation passed for User ID U457: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "eefc797d-7597-491c-a3db-426737f37ec9",
+    "timestamp": "2025-07-15T17:55:24.063584",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U457)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_5a50f81f"
+    },
+    "reason": "Validation failed for User ID U457: Granted Access='Software Engineer', Role='Diego Zhang', LLM Response: NotFound",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "651e126a-4f7f-4f92-aebb-8f082fb39ae1",
+    "timestamp": "2025-07-15T17:55:24.077629",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U457)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_c4688879"
+    },
+    "reason": "Validation failed for User ID U457: Granted Access='Software Engineer', Role='Diego Zhang', LLM Response: NotFound",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "5713341a-4a5e-4481-a880-f4e5eb74710c",
+    "timestamp": "2025-07-15T17:55:24.093047",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_078bcb86"
+    },
+    "reason": "Validation passed for User ID U457: Approver Name='Priya Ramesh', Granter Name='Lara Patel', Approver and granter are different",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "fa69d522-bd5e-4ee1-b632-ffd8c7092ace",
+    "timestamp": "2025-07-15T17:55:24.108200",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_86867ca5"
+    },
+    "reason": "Validation passed for User ID U457: Approver Name='Priya Ramesh', Granter Name='Lara Patel', Approver and granter are different",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "a3d734d6-a71b-4b9b-b724-cf71b33cc06f",
+    "timestamp": "2025-07-15T17:55:24.127036",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_f45f0d3c"
+    },
+    "reason": "Validation passed for User ID U457: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "6ea985b4-ed7e-40e4-9833-6bfe36d40a54",
+    "timestamp": "2025-07-15T17:55:24.143568",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U457)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_fd05e0e3"
+    },
+    "reason": "Validation passed for User ID U457: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U457"
+  },
+  {
+    "log_id": "3ab28c11-02d1-44b2-a1a8-3a8e6a2b8786",
+    "timestamp": "2025-07-15T17:55:37.349836",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Approver Title Validation: User ID=U433",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_e0e7987e"
+    },
+    "reason": "Approver title Project Coordinator not managerial in organizational chart",
+    "source": "Org Chart Response=NotFound"
+  },
+  {
+    "log_id": "b8101a20-e1a8-48c4-9ef3-24532b54b13c",
+    "timestamp": "2025-07-15T17:55:37.360006",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access approved (User ID: U433)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_33a44438"
+    },
+    "reason": "Validation failed for User ID U433: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "86e71c5f-3d2b-4c71-8bdf-d379e4f4ec16",
+    "timestamp": "2025-07-15T17:55:37.377420",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access approved (User ID: U433)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_55c91813"
+    },
+    "reason": "Validation failed for User ID U433: Approver Title='Project Coordinator' not managerial per organizational chart: NotFound",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "b45ea06e-d3f0-4b25-a907-ebd5e6e20db7",
+    "timestamp": "2025-07-15T17:55:37.394180",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access consistent (User ID: U433)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_69297e71"
+    },
+    "reason": "Validation passed for User ID U433: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "e3f83491-b5ab-475c-8a15-e6619e5217c2",
+    "timestamp": "2025-07-15T17:55:37.410598",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access consistent (User ID: U433)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_6d078a2f"
+    },
+    "reason": "Validation passed for User ID U433: Requested Access='Software Engineer' exactly matches Granted Access='Software Engineer'",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "f441e620-fc3e-4322-95e0-56f397af5f93",
+    "timestamp": "2025-07-15T17:55:38.783057",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: New user access appropriate (User ID: U433)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_246a337d"
+    },
+    "reason": "Validation failed for User ID U433: Granted Access='Software Engineer', Role='Kevin Okeke', LLM Response: NotFound",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "bb37411e-ad48-454c-9426-6582c3948899",
+    "timestamp": "2025-07-15T17:55:38.795618",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: Modified user access appropriate (User ID: U433)",
+    "level": "INFO",
+    "decision": "FAIL",
+    "context": {
+      "decision_id": "audit_processing_e3a4f7da"
+    },
+    "reason": "Validation failed for User ID U433: Granted Access='Software Engineer', Role='Kevin Okeke', LLM Response: NotFound",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "13bbb1c2-463c-4275-aed0-59c8837cd584",
+    "timestamp": "2025-07-15T17:55:38.810706",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user access (User ID: U433)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_2bde0308"
+    },
+    "reason": "Validation passed for User ID U433: Approver Name='Olivia Mensah', Granter Name='Ada Chen', Approver and granter are different",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "9d99ca68-f9b9-41b7-8b5c-8059318dcd4a",
+    "timestamp": "2025-07-15T17:55:38.826819",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user access (User ID: U433)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_1df5b003"
+    },
+    "reason": "Validation passed for User ID U433: Approver Name='Olivia Mensah', Granter Name='Ada Chen', Approver and granter are different",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "6c5e010f-9564-450f-8bb7-6f2669877222",
+    "timestamp": "2025-07-15T17:55:38.848163",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: New user privilege conflicts (User ID: U433)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_ad5f462e"
+    },
+    "reason": "Validation passed for User ID U433: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "ef5526a9-50d4-4ebc-b68b-4b4fd2c49c7f",
+    "timestamp": "2025-07-15T17:55:38.862762",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Test: SoD: Modified user privilege conflicts (User ID: U433)",
+    "level": "INFO",
+    "decision": "PASS",
+    "context": {
+      "decision_id": "audit_processing_647da8bf"
+    },
+    "reason": "Validation passed for User ID U433: No SOD conflicts detected in privileges: Application Modification",
+    "source": "User ID=U433"
+  },
+  {
+    "log_id": "e8bf5e05-5311-47eb-b634-d4433e82629e",
+    "timestamp": "2025-07-15T17:55:38.998457",
+    "session_id": "20250715_173845",
+    "component": "Audit Processing",
+    "message": "Results Display",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "audit_processing_07f2c855"
+    },
+    "reason": "Displayed 180 audit results across 18 users"
+  }
+]

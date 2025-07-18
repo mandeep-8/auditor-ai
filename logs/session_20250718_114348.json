@@ -1,0 +1,88 @@
+[
+  {
+    "log_id": "ad7e7639-204e-4ed6-b252-a5bd3139d824",
+    "timestamp": "2025-07-18T11:43:48.830934",
+    "session_id": "20250718_114348",
+    "component": "Application",
+    "message": "Application session initialized",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "session_id": "20250718_114348",
+      "decision_id": "application_6e2bd468"
+    },
+    "reason": "New session ID: 20250718_114348"
+  },
+  {
+    "log_id": "04e6d51d-1110-4185-a326-91a5c0fc3097",
+    "timestamp": "2025-07-18T11:44:43.202819",
+    "session_id": "20250718_114348",
+    "component": "Audit Processing",
+    "message": "Started audit processing",
+    "level": "INFO"
+  },
+  {
+    "log_id": "361a8351-2304-4670-a184-0dc9d5860aed",
+    "timestamp": "2025-07-18T11:44:43.206309",
+    "session_id": "20250718_114348",
+    "component": "Audit Processing",
+    "message": "CDD Check",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_c62127aa"
+    },
+    "reason": "CDD not saved or validated"
+  },
+  {
+    "log_id": "1d28d4dc-52d6-419d-9b65-e0c6aef2b9b0",
+    "timestamp": "2025-07-18T11:44:43.758794",
+    "session_id": "20250718_114348",
+    "component": "CDD Processing",
+    "message": "Started CDD processing",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "cdd_processing_f6fb7895"
+    }
+  },
+  {
+    "log_id": "da0e60f3-9d1c-49ed-864e-6f97827c9858",
+    "timestamp": "2025-07-18T11:44:43.775162",
+    "session_id": "20250718_114348",
+    "component": "CDD Processing",
+    "message": "QA Chain Initialization",
+    "level": "WARNING",
+    "decision": "Skipped",
+    "context": {
+      "decision_id": "cdd_processing_2207d41d"
+    },
+    "reason": "No valid Governance Documents to index: No valid Governance Documents to index."
+  },
+  {
+    "log_id": "3d5dfd66-9a3f-4309-b481-3bbb50633e16",
+    "timestamp": "2025-07-18T11:44:43.786033",
+    "session_id": "20250718_114348",
+    "component": "CDD Processing",
+    "message": "Control Owner Profile",
+    "level": "WARNING",
+    "decision": "Pending",
+    "context": {
+      "decision_id": "cdd_processing_6776d52b"
+    },
+    "reason": "Control Owner details not found"
+  },
+  {
+    "log_id": "351d9455-1932-4a1c-818b-810b2d4700ba",
+    "timestamp": "2025-07-18T11:44:43.793253",
+    "session_id": "20250718_114348",
+    "component": "CDD Processing",
+    "message": "Control Owner Validation",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "cdd_processing_0a1cf4a1"
+    },
+    "reason": "Control Owner Name or Designation missing"
+  }
+]

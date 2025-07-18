@@ -1,0 +1,37 @@
+[
+  {
+    "log_id": "4c3d41da-7d01-41bd-9f81-e4971e7548dc",
+    "timestamp": "2025-07-16T12:20:43.621021",
+    "session_id": "20250716_122043",
+    "component": "Application",
+    "message": "Application session initialized",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "session_id": "20250716_122043",
+      "decision_id": "application_27e1074f"
+    },
+    "reason": "New session ID: 20250716_122043"
+  },
+  {
+    "log_id": "8a9f5df1-4999-4429-b0e8-4fce12284b3e",
+    "timestamp": "2025-07-16T12:21:43.840081",
+    "session_id": "20250716_122043",
+    "component": "Audit Processing",
+    "message": "Started audit processing",
+    "level": "INFO"
+  },
+  {
+    "log_id": "1e7c0650-1383-4132-ba56-fa7067fb8029",
+    "timestamp": "2025-07-16T12:21:43.846216",
+    "session_id": "20250716_122043",
+    "component": "Audit Processing",
+    "message": "CDD Check",
+    "level": "INFO",
+    "decision": "Rejected",
+    "context": {
+      "decision_id": "audit_processing_2f4bce29"
+    },
+    "reason": "CDD not saved or validated"
+  }
+]
