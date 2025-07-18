@@ -18,3 +18,5 @@ Pillow
 tensorflow
 chromadb
 opencv-python-headless
+
+###
