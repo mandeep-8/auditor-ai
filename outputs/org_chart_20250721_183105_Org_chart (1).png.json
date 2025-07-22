@@ -1,0 +1,843 @@
+{
+  "file": "Org_chart (1).png",
+  "session_id": "20250721_183105",
+  "timestamp": "2025-07-21T18:32:58.204504",
+  "text": "Board of Directors Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li Wei (Tech Dir) Rami Al-Fulan (Shareholder Rep) Aisha Rahman E CEO Luka Petrovic Marcus Thompson Priya Ramesh - (Jean-I Luc Moreau Isabella Conti - Fatima El-Hadid Thandiwe L Ndlovu David Nguyen - Chen Wei 4 Alejandro Ortega Amira Ben Youssef - Nathaniel Tan Rohit Verma COS CFO CTO CPO COO CRCO CPCO CMGO CDAO RMD. Americas RMD EMEA RMD APAC RMD India Wei Zhang Okwiri Abdallah Lucia Morales Samira Ahmed Eleni VP FP&A Vpregi Engineering (Mercgser Cybersecurity VP Product Strategy VP Talent Acquisition VP Brand Megedoks Comms Z Samuel Nyarko Alice Kim Kevin Miller Mikael Sorensen Julianne Fischer Andre Williams Director Budgeting Director Backend Director SOC Ops Director Payments Director Recruiting Director Comms (Anastasia Petrova Mohammed Fazal Nadia Faroog Yasmin Ali Miguel Santos Nozomi Takeda Mgr Forecasting Mgr Core. APIs Sr Mgr Threat Intel Senior PM Mgr Tech Hiring Mgr PR & Media L L - Leonardo Rossi Grace Li Dmitri Volkov Hassan Khan Daniel Obiang Hamza Khan Senior Analyst Lead Sr Backend Eng SOC Shift Lead Product Manager Senior Recruiter Sr Content Strategist V Priyanka Sharma Cheng Sara Okeke Emily Wong Xiaohong Liu Liang Chen Analyst laren Engineer Senior Analyst Associate PM Recruiter Social Media Spec L L Lara Gonz\u00e2lez Juan P\u00e9rez Brian Lee Engineer Analyst Growth Analyst Arjun Sinha DevOps Analyst",
+  "hierarchy": [
+    {
+      "name": "Board of Directors",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.4765625,
+        0.0164097377232143,
+        0.5517578125,
+        0.0521294730050223
+      ],
+      "y_center": 0.0342696053641183,
+      "relationships": []
+    },
+    {
+      "name": "Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li Wei (Tech Dir) Rami Al-Fulan (Shareholder Rep)",
+      "role": "Chair",
+      "group": 0,
+      "bbox": [
+        0.2216796875,
+        0.1070829119001116,
+        0.79296875,
+        0.14280264718191965
+      ],
+      "y_center": 0.12494277954101562,
+      "relationships": []
+    },
+    {
+      "name": "Aisha Rahman E",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.484375,
+        0.1757747105189732,
+        0.552734375,
+        0.2224851335797991
+      ],
+      "y_center": 0.19912992204938615,
+      "relationships": []
+    },
+    {
+      "name": "CEO",
+      "role": "CEO",
+      "group": 0,
+      "bbox": [
+        0.5029296875,
+        0.21149444580078125,
+        0.5244140625,
+        0.2444665091378348
+      ],
+      "y_center": 0.22798047746930802,
+      "relationships": []
+    },
+    {
+      "name": "Luka Petrovic Marcus Thompson Priya Ramesh - (Jean-I Luc Moreau Isabella Conti - Fatima El-Hadid Thandiwe L Ndlovu David Nguyen - Chen Wei 4 Alejandro Ortega Amira Ben Youssef - Nathaniel Tan Rohit Verma",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.0029296875,
+        0.2637002127511161,
+        0.9970703125,
+        0.31865365164620535
+      ],
+      "y_center": 0.2911769321986607,
+      "relationships": []
+    },
+    {
+      "name": "COS",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.0224609375,
+        0.30491529192243305,
+        0.04296875,
+        0.33513968331473215
+      ],
+      "y_center": 0.3200274876185826,
+      "relationships": []
+    },
+    {
+      "name": "CFO",
+      "role": "CFO",
+      "group": 0,
+      "bbox": [
+        0.103515625,
+        0.30491529192243305,
+        0.123046875,
+        0.33513968331473215
+      ],
+      "y_center": 0.3200274876185826,
+      "relationships": []
+    },
+    {
+      "name": "CTO",
+      "role": "CTO",
+      "group": 0,
+      "bbox": [
+        0.1845703125,
+        0.3076629638671875,
+        0.205078125,
+        0.33513968331473215
+      ],
+      "y_center": 0.32140132359095985,
+      "relationships": []
+    },
+    {
+      "name": "CPO",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.2626953125,
+        0.3076629638671875,
+        0.2841796875,
+        0.33513968331473215
+      ],
+      "y_center": 0.32140132359095985,
+      "relationships": []
+    },
+    {
+      "name": "COO",
+      "role": "COO",
+      "group": 0,
+      "bbox": [
+        0.3408203125,
+        0.3076629638671875,
+        0.3623046875,
+        0.33513968331473215
+      ],
+      "y_center": 0.32140132359095985,
+      "relationships": []
+    },
+    {
+      "name": "CRCO",
+      "role": "CRCO",
+      "group": 0,
+      "bbox": [
+        0.416015625,
+        0.30491529192243305,
+        0.4423828125,
+        0.33513968331473215
+      ],
+      "y_center": 0.3200274876185826,
+      "relationships": []
+    },
+    {
+      "name": "CPCO",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.5,
+        0.30491529192243305,
+        0.5263671875,
+        0.33513968331473215
+      ],
+      "y_center": 0.3200274876185826,
+      "relationships": []
+    },
+    {
+      "name": "CMGO",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.5791015625,
+        0.30491529192243305,
+        0.6083984375,
+        0.33513968331473215
+      ],
+      "y_center": 0.3200274876185826,
+      "relationships": []
+    },
+    {
+      "name": "CDAO RMD. Americas RMD EMEA RMD APAC RMD India",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.64453125,
+        0.30491529192243305,
+        0.9921875,
+        0.3406350272042411
+      ],
+      "y_center": 0.3227751595633371,
+      "relationships": []
+    },
+    {
+      "name": "Wei Zhang",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.08203125,
+        0.37360709054129465,
+        0.12890625,
+        0.41207449776785715
+      ],
+      "y_center": 0.3928407941545759,
+      "relationships": []
+    },
+    {
+      "name": "Okwiri",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.1875,
+        0.3763547624860491,
+        0.216796875,
+        0.4065791538783482
+      ],
+      "y_center": 0.3914669581821987,
+      "relationships": []
+    },
+    {
+      "name": "Abdallah Lucia Morales",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.2705078125,
+        0.37360709054129465,
+        0.39453125,
+        0.41207449776785715
+      ],
+      "y_center": 0.3928407941545759,
+      "relationships": []
+    },
+    {
+      "name": "Samira Ahmed",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.474609375,
+        0.37085941859654015,
+        0.53515625,
+        0.40932682582310265
+      ],
+      "y_center": 0.3900931222098214,
+      "relationships": []
+    },
+    {
+      "name": "Eleni",
+      "role": "Eleni",
+      "group": 0,
+      "bbox": [
+        0.5703125,
+        0.37360709054129465,
+        0.5947265625,
+        0.41207449776785715
+      ],
+      "y_center": 0.3928407941545759,
+      "relationships": []
+    },
+    {
+      "name": "VP FP&A Vpregi Engineering (Mercgser Cybersecurity VP Product Strategy",
+      "role": "VP VP Strategy",
+      "group": 0,
+      "bbox": [
+        0.0859375,
+        0.36536407470703125,
+        0.408203125,
+        0.43680354527064735
+      ],
+      "y_center": 0.4010838099888393,
+      "relationships": []
+    },
+    {
+      "name": "VP Talent Acquisition VP Brand Megedoks Comms",
+      "role": "VP VP",
+      "group": 0,
+      "bbox": [
+        0.4619140625,
+        0.3681117466517857,
+        0.642578125,
+        0.4395512172154018
+      ],
+      "y_center": 0.40383148193359375,
+      "relationships": []
+    },
+    {
+      "name": "Z",
+      "role": "Z",
+      "group": 0,
+      "bbox": [
+        0.09765625,
+        0.45054190499441965,
+        0.1064453125,
+        0.47252328055245535
+      ],
+      "y_center": 0.4615325927734375,
+      "relationships": []
+    },
+    {
+      "name": "Samuel Nyarko",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.068359375,
+        0.46702793666294645,
+        0.130859375,
+        0.5054953438895089
+      ],
+      "y_center": 0.48626164027622765,
+      "relationships": []
+    },
+    {
+      "name": "Alice Kim",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.16796875,
+        0.46702793666294645,
+        0.208984375,
+        0.5054953438895089
+      ],
+      "y_center": 0.48626164027622765,
+      "relationships": []
+    },
+    {
+      "name": "Kevin Miller Mikael Sorensen",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.2509765625,
+        0.46702793666294645,
+        0.400390625,
+        0.5054953438895089
+      ],
+      "y_center": 0.48626164027622765,
+      "relationships": []
+    },
+    {
+      "name": "Julianne Fischer Andre Williams",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.4697265625,
+        0.46702793666294645,
+        0.634765625,
+        0.5054953438895089
+      ],
+      "y_center": 0.48626164027622765,
+      "relationships": []
+    },
+    {
+      "name": "Director Budgeting Director Backend Director SOC Ops Director Payments",
+      "role": "Director Director Director Director",
+      "group": 0,
+      "bbox": [
+        0.0595703125,
+        0.48900931222098215,
+        0.404296875,
+        0.5274767194475446
+      ],
+      "y_center": 0.5082430158342633,
+      "relationships": []
+    },
+    {
+      "name": "Director Recruiting Director Comms",
+      "role": "Director Director",
+      "group": 0,
+      "bbox": [
+        0.46484375,
+        0.48900931222098215,
+        0.6357421875,
+        0.5302243913922992
+      ],
+      "y_center": 0.5096168518066406,
+      "relationships": []
+    },
+    {
+      "name": "(Anastasia Petrova Mohammed Fazal Nadia Faroog Yasmin Ali",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.0595703125,
+        0.5577011108398438,
+        0.388671875,
+        0.5989161900111607
+      ],
+      "y_center": 0.5783086504255022,
+      "relationships": []
+    },
+    {
+      "name": "Miguel Santos",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.4736328125,
+        0.5604487827845982,
+        0.533203125,
+        0.5989161900111607
+      ],
+      "y_center": 0.5796824863978794,
+      "relationships": []
+    },
+    {
+      "name": "Nozomi Takeda",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.5712890625,
+        0.5577011108398438,
+        0.6337890625,
+        0.5989161900111607
+      ],
+      "y_center": 0.5783086504255022,
+      "relationships": []
+    },
+    {
+      "name": "Mgr Forecasting Mgr Core. APIs Sr Mgr Threat Intel Senior PM",
+      "role": "PM",
+      "group": 0,
+      "bbox": [
+        0.0654296875,
+        0.5824301583426339,
+        0.388671875,
+        0.6208975655691964
+      ],
+      "y_center": 0.6016638619559151,
+      "relationships": []
+    },
+    {
+      "name": "Mgr Tech Hiring Mgr PR & Media",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.470703125,
+        0.5851778302873883,
+        0.6376953125,
+        0.6236452375139508
+      ],
+      "y_center": 0.6044115339006696,
+      "relationships": []
+    },
+    {
+      "name": "L",
+      "role": "L",
+      "group": 0,
+      "bbox": [
+        0.095703125,
+        0.6373835972377232,
+        0.103515625,
+        0.6593649727957589
+      ],
+      "y_center": 0.6483742850167411,
+      "relationships": []
+    },
+    {
+      "name": "L",
+      "role": "L",
+      "group": 0,
+      "bbox": [
+        0.1865234375,
+        0.6401312691824776,
+        0.193359375,
+        0.6566173008510044
+      ],
+      "y_center": 0.6483742850167411,
+      "relationships": []
+    },
+    {
+      "name": "-",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.599609375,
+        0.6401312691824776,
+        0.6064453125,
+        0.6593649727957589
+      ],
+      "y_center": 0.6497481209891183,
+      "relationships": []
+    },
+    {
+      "name": "Leonardo Rossi",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.0654296875,
+        0.65386962890625,
+        0.1318359375,
+        0.6923370361328125
+      ],
+      "y_center": 0.6731033325195312,
+      "relationships": []
+    },
+    {
+      "name": "Grace Li",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.169921875,
+        0.65386962890625,
+        0.20703125,
+        0.6923370361328125
+      ],
+      "y_center": 0.6731033325195312,
+      "relationships": []
+    },
+    {
+      "name": "Dmitri Volkov Hassan Khan",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.251953125,
+        0.65386962890625,
+        0.3935546875,
+        0.6923370361328125
+      ],
+      "y_center": 0.6731033325195312,
+      "relationships": []
+    },
+    {
+      "name": "Daniel Obiang",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.474609375,
+        0.6566173008510044,
+        0.5322265625,
+        0.689589364188058
+      ],
+      "y_center": 0.6731033325195312,
+      "relationships": []
+    },
+    {
+      "name": "Hamza Khan",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.5751953125,
+        0.65386962890625,
+        0.62890625,
+        0.6923370361328125
+      ],
+      "y_center": 0.6731033325195312,
+      "relationships": []
+    },
+    {
+      "name": "Senior Analyst Lead Sr Backend Eng SOC Shift Lead Product Manager",
+      "role": "Analyst Product Manager",
+      "group": 0,
+      "bbox": [
+        0.0693359375,
+        0.6758510044642857,
+        0.4013671875,
+        0.7143184116908482
+      ],
+      "y_center": 0.695084708077567,
+      "relationships": []
+    },
+    {
+      "name": "Senior Recruiter Sr Content Strategist",
+      "role": "Recruiter Strategist",
+      "group": 0,
+      "bbox": [
+        0.4697265625,
+        0.6758510044642857,
+        0.6455078125,
+        0.7143184116908482
+      ],
+      "y_center": 0.695084708077567,
+      "relationships": []
+    },
+    {
+      "name": "V",
+      "role": "V",
+      "group": 0,
+      "bbox": [
+        0.27734375,
+        0.730804443359375,
+        0.283203125,
+        0.7500381469726562
+      ],
+      "y_center": 0.7404212951660156,
+      "relationships": []
+    },
+    {
+      "name": "Priyanka Sharma",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.0634765625,
+        0.7472904750279018,
+        0.1337890625,
+        0.7857578822544643
+      ],
+      "y_center": 0.766524178641183,
+      "relationships": []
+    },
+    {
+      "name": "Cheng",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.1845703125,
+        0.7472904750279018,
+        0.21484375,
+        0.7857578822544643
+      ],
+      "y_center": 0.766524178641183,
+      "relationships": []
+    },
+    {
+      "name": "Sara Okeke",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.2568359375,
+        0.7472904750279018,
+        0.3037109375,
+        0.7857578822544643
+      ],
+      "y_center": 0.766524178641183,
+      "relationships": []
+    },
+    {
+      "name": "Emily Wong",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.3408203125,
+        0.7472904750279018,
+        0.390625,
+        0.7857578822544643
+      ],
+      "y_center": 0.766524178641183,
+      "relationships": []
+    },
+    {
+      "name": "Xiaohong Liu",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.4775390625,
+        0.7472904750279018,
+        0.53125,
+        0.7857578822544643
+      ],
+      "y_center": 0.766524178641183,
+      "relationships": []
+    },
+    {
+      "name": "Liang Chen",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.5791015625,
+        0.7472904750279018,
+        0.625,
+        0.7857578822544643
+      ],
+      "y_center": 0.766524178641183,
+      "relationships": []
+    },
+    {
+      "name": "Analyst",
+      "role": "Analyst",
+      "group": 0,
+      "bbox": [
+        0.08203125,
+        0.772019522530692,
+        0.1162109375,
+        0.8104869297572544
+      ],
+      "y_center": 0.7912532261439732,
+      "relationships": []
+    },
+    {
+      "name": "laren Engineer Senior Analyst Associate PM",
+      "role": "Engineer Analyst",
+      "group": 0,
+      "bbox": [
+        0.1611328125,
+        0.7445428030831474,
+        0.39453125,
+        0.8104869297572544
+      ],
+      "y_center": 0.777514866420201,
+      "relationships": []
+    },
+    {
+      "name": "Recruiter",
+      "role": "Recruiter",
+      "group": 0,
+      "bbox": [
+        0.4833984375,
+        0.7692718505859375,
+        0.5244140625,
+        0.8049915858677456
+      ],
+      "y_center": 0.7871317182268416,
+      "relationships": []
+    },
+    {
+      "name": "Social Media Spec",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.56640625,
+        0.7692718505859375,
+        0.638671875,
+        0.8077392578125
+      ],
+      "y_center": 0.7885055541992188,
+      "relationships": []
+    },
+    {
+      "name": "L",
+      "role": "L",
+      "group": 0,
+      "bbox": [
+        0.1865234375,
+        0.8269729614257812,
+        0.193359375,
+        0.8462066650390625
+      ],
+      "y_center": 0.8365898132324219,
+      "relationships": []
+    },
+    {
+      "name": "L",
+      "role": "L",
+      "group": 0,
+      "bbox": [
+        0.6005859375,
+        0.8269729614257812,
+        0.6064453125,
+        0.8462066650390625
+      ],
+      "y_center": 0.8365898132324219,
+      "relationships": []
+    },
+    {
+      "name": "Lara Gonz\u00e2lez",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.16015625,
+        0.8407113211495536,
+        0.21875,
+        0.8791787283761161
+      ],
+      "y_center": 0.8599450247628349,
+      "relationships": []
+    },
+    {
+      "name": "Juan P\u00e9rez",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.255859375,
+        0.8407113211495536,
+        0.3037109375,
+        0.8791787283761161
+      ],
+      "y_center": 0.8599450247628349,
+      "relationships": []
+    },
+    {
+      "name": "Brian Lee",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.5810546875,
+        0.8407113211495536,
+        0.623046875,
+        0.8791787283761161
+      ],
+      "y_center": 0.8599450247628349,
+      "relationships": []
+    },
+    {
+      "name": "Engineer",
+      "role": "Engineer",
+      "group": 0,
+      "bbox": [
+        0.1689453125,
+        0.8654403686523438,
+        0.208984375,
+        0.9011601039341518
+      ],
+      "y_center": 0.8833002362932478,
+      "relationships": []
+    },
+    {
+      "name": "Analyst",
+      "role": "Analyst",
+      "group": 0,
+      "bbox": [
+        0.2626953125,
+        0.8654403686523438,
+        0.296875,
+        0.9039077758789062
+      ],
+      "y_center": 0.884674072265625,
+      "relationships": []
+    },
+    {
+      "name": "Growth Analyst",
+      "role": "Analyst",
+      "group": 0,
+      "bbox": [
+        0.5703125,
+        0.8626926967075893,
+        0.6328125,
+        0.9011601039341518
+      ],
+      "y_center": 0.8819264003208706,
+      "relationships": []
+    },
+    {
+      "name": "Arjun Sinha",
+      "role": "Unknown",
+      "group": 0,
+      "bbox": [
+        0.1630859375,
+        0.9341321672712053,
+        0.2138671875,
+        0.9725995744977678
+      ],
+      "y_center": 0.9533658708844865,
+      "relationships": []
+    },
+    {
+      "name": "DevOps Analyst",
+      "role": "Analyst",
+      "group": 0,
+      "bbox": [
+        0.1572265625,
+        0.96160888671875,
+        0.2216796875,
+        0.991833278111049
+      ],
+      "y_center": 0.9767210824148995,
+      "relationships": []
+    }
+  ],
+  "lines": [
+    {
+      "start": [
+        

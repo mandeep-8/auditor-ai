@@ -1,0 +1,172 @@
+[
+  {
+    "log_id": "26a73ed7-b41d-4140-b0ba-bf207dc5f327",
+    "timestamp": "2025-07-21T18:31:05.036746",
+    "session_id": "20250721_183105",
+    "component": "Application",
+    "message": "Application session initialized",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "session_id": "20250721_183105",
+      "decision_id": "application_cca8ede4"
+    },
+    "reason": "New session ID: 20250721_183105"
+  },
+  {
+    "log_id": "da5f54a1-18bd-4478-8f4d-65a251799c41",
+    "timestamp": "2025-07-21T18:31:32.935379",
+    "session_id": "20250721_183105",
+    "component": "Authentication",
+    "message": "Login attempt",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "username": "admin",
+      "decision_id": "authentication_d034fc42"
+    },
+    "reason": "Valid credentials provided"
+  },
+  {
+    "log_id": "a1ba88b4-1b5a-4113-a255-b7fcbcd53352",
+    "timestamp": "2025-07-21T18:32:42.574528",
+    "session_id": "20250721_183105",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Saving",
+    "level": "INFO"
+  },
+  {
+    "log_id": "0fa65e34-5a73-4254-8045-8f3503a3a651",
+    "timestamp": "2025-07-21T18:32:42.574528",
+    "session_id": "20250721_183105",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Saving",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_51476d52"
+    },
+    "reason": "File saved successfully"
+  },
+  {
+    "log_id": "f8f833eb-5e6e-4b73-bfb5-3dd74bd40115",
+    "timestamp": "2025-07-21T18:32:42.574528",
+    "session_id": "20250721_183105",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO"
+  },
+  {
+    "log_id": "a86147a7-35e1-461e-b468-e651657ccbbf",
+    "timestamp": "2025-07-21T18:32:58.220489",
+    "session_id": "20250721_183105",
+    "component": "Org Chart Processing",
+    "message": "Saving org chart interpretation to org_chart_20250721_183105_Org_chart (1).png.json",
+    "level": "ERROR",
+    "decision": "Rejected",
+    "context": {
+      "file": "Org_chart (1).png",
+      "output_path": "C:\\Users\\ali16\\OneDrive\\Documents\\OfficeWork\\NST\\ai-auditor\\version 1\\outputs\\org_chart_20250721_183105_Org_chart (1).png.json",
+      "decision_id": "org_chart_processing_a1cce5f3"
+    },
+    "reason": "Failed to save JSON: Object of type intc is not JSON serializable"
+  },
+  {
+    "log_id": "1e557fe8-5a46-4c90-8c50-f721a152c3f8",
+    "timestamp": "2025-07-21T18:32:58.252253",
+    "session_id": "20250721_183105",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Text Extraction",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_1dc5f7d0"
+    },
+    "reason": "Text extracted successfully",
+    "source": "Text Preview=Board of Directors Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li W..."
+  },
+  {
+    "log_id": "0cd1280e-39da-4587-b647-5b7845540e88",
+    "timestamp": "2025-07-21T18:32:58.252253",
+    "session_id": "20250721_183105",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Validation",
+    "level": "INFO"
+  },
+  {
+    "log_id": "6616f896-d2e1-430c-b3b4-1390d8621312",
+    "timestamp": "2025-07-21T18:33:01.556338",
+    "session_id": "20250721_183105",
+    "component": "Document Validation",
+    "message": "File=Org_chart (1).png, Category=Organizational Chart, Step=Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "document_validation_f8289a74"
+    },
+    "reason": "See LLM response for details"
+  },
+  {
+    "log_id": "58fa2218-1b86-46ff-8911-d0d40b9d4e2f",
+    "timestamp": "2025-07-21T18:33:01.556338",
+    "session_id": "20250721_183105",
+    "component": "Document Validation",
+    "message": "Validate File Org_chart (1).png",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "file": "Org_chart (1).png",
+      "category": "Organizational Chart",
+      "reason": null,
+      "evidence": "Board of Directors Hiroshi Nakamura (Chair) Sandra Mbatha (Audit Dir) Carlos Mendoza (Risk Dir) Li W...",
+      "decision_id": "document_validation_4f673062"
+    }
+  },
+  {
+    "log_id": "bdf30984-9b07-4fec-8945-bee814769ce6",
+    "timestamp": "2025-07-21T18:33:01.570206",
+    "session_id": "20250721_183105",
+    "component": "PIP Validation",
+    "message": "Organizational Charts Validated: True",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "files": [
+        "Org_chart (1).png"
+      ],
+      "decision_id": "pip_validation_cea35559"
+    },
+    "reason": "Files: ['Org_chart (1).png']"
+  },
+  {
+    "log_id": "8665b98c-d1e9-4e18-9381-c0ca8a129a2e",
+    "timestamp": "2025-07-21T18:33:01.570206",
+    "session_id": "20250721_183105",
+    "component": "UI Interaction",
+    "message": "Validate button clicked",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "decision_id": "ui_interaction_7a30a45a"
+    }
+  },
+  {
+    "log_id": "0818bb44-a1f4-4d8b-8cd4-f731c9b8a1fb",
+    "timestamp": "2025-07-21T18:33:01.570206",
+    "session_id": "20250721_183105",
+    "component": "PIP Validation",
+    "message": "Text Inputs Validation",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "user_input": {
+        "control_owner_name": "Aisha Rahman",
+        "control_owner_title": "CEO",
+        "control_owner_email": "ali16saklani@gmail.com",
+        "audit_period": "01/01/2024 - 31/12/2024"
+      },
+      "decision_id": "pip_validation_6a69b043"
+    },
+    "reason": "Valid inputs."
+  }
+]

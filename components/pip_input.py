@@ -21,7 +21,7 @@ def get_file_identifier(file):
     """Generate a unique identifier for a file based on name and content length."""
     file.seek(0)
     content = file.read()
-    file.seek(0)  # Reset file pointer
+    file.seek(0)
     return hashlib.md5((file.name + str(len(content))).encode()).hexdigest()
 
 def validate_uploaded_file(files, category, progress_container, status_container, session_logger):
@@ -68,8 +68,8 @@ def validate_uploaded_file(files, category, progress_container, status_container
             file = future_to_file[future]
             try:
                 result = future.result()
-                file_id = get_file_identifier(file)  # Add file identifier
-                result["file_id"] = file_id  # Store file_id in result
+                file_id = get_file_identifier(file)
+                result["file_id"] = file_id
                 st.session_state[file_ui[file.name]["progress_key"]] = 1.0
                 st.session_state[file_ui[file.name]["status_key"]] = "100%"
                 file_ui[file.name]["progress_text"].text(st.session_state[file_ui[file.name]["status_key"]])
@@ -95,13 +95,13 @@ def validate_uploaded_file(files, category, progress_container, status_container
                     level="INFO"
                 )
             except Exception as e:
-                file_id = get_file_identifier(file)  # Add file identifier for error case
+                file_id = get_file_identifier(file)
                 st.session_state[file_ui[file.name]["progress_key"]] = 1.0
                 st.session_state[file_ui[file.name]["status_key"]] = "100%"
                 file_ui[file.name]["progress_text"].text(st.session_state[file_ui[file.name]["status_key"]])
                 file_ui[file.name]["name_display"].markdown(f"{file.name} ❌ (Unexpected error: {str(e)})")
                 all_valid = False
-                results.append({"path": None, "text": None, "valid": False, "name": file.name, "file_id": file_id, "error": str(e)})
+                results.append({"path": None, "text": None, "valid": False, "name": file.name, "file_id": file_id, "error": str(e), "hierarchy": []})
                 
                 session_logger.log(
                     component="Document Validation",
@@ -118,16 +118,13 @@ def show_pip_input_form():
     """Display the PIP input form with enhanced logging and navigation to cdd_processing."""
     st.subheader("📂 Enter Preliminary Information")
     
-    # Initialize session logger
     session_logger = get_session_logger(LOG_DIR, st.session_state.session_id)
     
-    # Initialize session state for validation results if not present
     if "org_chart_validation" not in st.session_state:
         st.session_state.org_chart_validation = {"results": [], "validated": False}
     if "governance_doc_validation" not in st.session_state:
         st.session_state.governance_doc_validation = {"results": [], "validated": False}
     
-    # Log level toggle in sidebar
     with st.sidebar:
         log_level = st.selectbox(
             "Log Level",
@@ -150,6 +147,7 @@ def show_pip_input_form():
         control_owner_name = st.text_input("Control Owner Name*", "")
         control_owner_title = st.text_input("Control Owner Job Title & Role*", "")
         control_owner_email = st.text_input("Control Owner Email Address*", "")
+        audit_period = st.text_input("Audit Period* (e.g., 01/01/2025 - 31/12/2025)", "")
         
         session_logger.log(
             component="PIP Input",
@@ -159,14 +157,14 @@ def show_pip_input_form():
                 "user_input": {
                     "control_owner_name": control_owner_name,
                     "control_owner_title": control_owner_title,
-                    "control_owner_email": control_owner_email
+                    "control_owner_email": control_owner_email,
+                    "audit_period": audit_period
                 }
             }
         )
 
         org_chart_container = st.container()
         with org_chart_container:
-            # Updated to accept .pdf, .docx, .xlsx, .jpg, .png
             org_charts = st.file_uploader("Organisational Chart (PDF, DOCX, XLSX, JPG, PNG)", type=["pdf", "docx", "xlsx", "jpg", "png"], key="org_chart", accept_multiple_files=True)
             org_chart_progress = st.container()
             org_chart_status = st.container()
@@ -174,17 +172,14 @@ def show_pip_input_form():
         
         governance_doc_container = st.container()
         with governance_doc_container:
-            # Updated to accept .pdf, .docx, .xlsx, .jpg, .png
             governance_docs = st.file_uploader("Governance Documentation (PDF, DOCX, XLSX, JPG, PNG)", type=["pdf", "docx", "xlsx", "jpg", "png"], key="governance_doc", accept_multiple_files=True)
             governance_progress = st.container()
             governance_status = st.container()
         governance_doc_missing = st.toggle("I don't have the Governance Document")
         
-        # Update session state when files are removed or added
         current_org_chart_ids = [get_file_identifier(f) for f in org_charts] if org_charts else []
         current_gov_doc_ids = [get_file_identifier(f) for f in governance_docs] if governance_docs else []
         
-        # Remove results for files no longer present
         st.session_state.org_chart_validation["results"] = [
             r for r in st.session_state.org_chart_validation["results"]
             if r["file_id"] in current_org_chart_ids
@@ -205,7 +200,6 @@ def show_pip_input_form():
         )
 
         if org_charts:
-            # Validate only new files
             new_org_charts = [
                 f for f in org_charts
                 if get_file_identifier(f) not in [r["file_id"] for r in st.session_state.org_chart_validation["results"]]
@@ -228,7 +222,6 @@ def show_pip_input_form():
             st.session_state.org_chart_validation = {"results": [], "validated": False}
 
         if governance_docs:
-            # Validate only new files
             new_gov_docs = [
                 f for f in governance_docs
                 if get_file_identifier(f) not in [r["file_id"] for r in st.session_state.governance_doc_validation["results"]]
@@ -261,7 +254,7 @@ def show_pip_input_form():
             )
             
             valid, message = validate_pip_inputs(
-                control_owner_name, control_owner_title, control_owner_email, org_charts
+                control_owner_name, control_owner_title, control_owner_email, org_charts, audit_period
             )
             session_logger.log(
                 component="PIP Validation",
@@ -272,7 +265,8 @@ def show_pip_input_form():
                 context={"user_input": {
                     "control_owner_name": control_owner_name,
                     "control_owner_title": control_owner_title,
-                    "control_owner_email": control_owner_email
+                    "control_owner_email": control_owner_email,
+                    "audit_period": audit_period
                 }}
             )
             
@@ -303,8 +297,8 @@ def show_pip_input_form():
                 )
                 return None
 
-    text_valid, message = validate_pip_inputs(control_owner_name, control_owner_title, control_owner_email, org_charts)
-    org_chart_valid = org_chart_missing or (st.session_state.org_chart_validation["results"] and any(result["valid"] for result in st.session_state.org_chart_validation["results"]))
+    text_valid, message = validate_pip_inputs(control_owner_name, control_owner_title, control_owner_email, org_charts, audit_period)
+    org_chart_valid = org_chart_missing or (st.session_state.org_chart_validation["results"] and all(result["valid"] for result in st.session_state.org_chart_validation["results"]))
     governance_valid = governance_doc_missing or (st.session_state.governance_doc_validation["results"] and all(result["valid"] for result in st.session_state.governance_doc_validation["results"]))
     show_submit = text_valid and org_chart_valid and governance_valid
 
@@ -318,7 +312,7 @@ def show_pip_input_form():
                 context={}
             )
             
-            session_dir = os.path.join(SESSIONS_DIR, st.session_state.session_id, "chroma_db")
+            session_dir = os.path.join(SESSIONS_DIR, st.session_state.session_id)
             if os.path.exists(session_dir):
                 shutil.rmtree(session_dir)
                 session_logger.log(
@@ -332,21 +326,23 @@ def show_pip_input_form():
             
             st.session_state.pip_control_owner_name = control_owner_name
             st.session_state.pip_control_owner_title = control_owner_title
+            st.session_state.pip_audit_period = audit_period
             pip_info_path = os.path.join(OUTPUT_DIR, "pip_info.txt")
             with open(pip_info_path, "w") as info_file:
                 valid_org_charts = [result["name"] for result in st.session_state.org_chart_validation["results"] if result["valid"]]
                 valid_governance_docs = [result["name"] for result in st.session_state.governance_doc_validation["results"] if result["valid"]]
+                info_file.write(f'Audit Period: {audit_period}\n')
                 if valid_org_charts:
                     info_file.write(f'Organisational Chart Names: {", ".join(valid_org_charts)}\n')
                 if valid_governance_docs:
                     info_file.write(f'Governance Document Names: {", ".join(valid_governance_docs)}\n')
             session_logger.log(
                 component="PIP Submission",
-                message=f"Valid documents written to pip_info.txt",
+                message=f"Valid documents and audit period written to pip_info.txt",
                 decision="Accepted",
-                reason=f"Org Charts={valid_org_charts}, Governance Docs={valid_governance_docs}",
+                reason=f"Org Charts={valid_org_charts}, Governance Docs={valid_governance_docs}, Audit Period={audit_period}",
                 level="INFO",
-                context={"org_charts": valid_org_charts, "governance_docs": valid_governance_docs}
+                context={"org_charts": valid_org_charts, "governance_docs": valid_governance_docs, "audit_period": audit_period}
             )
 
             pip_conclusion_path = os.path.join(OUTPUT_DIR, "pip_conclusion.txt")
@@ -471,7 +467,6 @@ def show_pip_input_form():
                 context={}
             )
             
-            # Navigate to cdd_processing page
             try:
                 st.switch_page("pages/cdd_processing.py")
             except Exception as e:

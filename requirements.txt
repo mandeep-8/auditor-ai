@@ -17,6 +17,10 @@ python-doctr[tf]
 Pillow
 tensorflow
 chromadb
-opencv-python-headless
-
-###
+scikit-learn 
+nltk 
+opencv-python 
+torch 
+torchvision 
+numpy
+spacy

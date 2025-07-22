@@ -1,12 +1,15 @@
+#pages/audit_processing.py
 import streamlit as st
 import pandas as pd
 import os
 import json
+import re
 from utils.question_answering import get_qa_chain
 from utils.session_logger import get_session_logger
 from utils.content_validator import extract_text_from_file
 from config import INPUT_DIR, LOG_DIR, SESSIONS_DIR, OUTPUT_DIR
 from functools import lru_cache
+from datetime import datetime
 
 # Cache QA chain results to avoid redundant calls
 @lru_cache(maxsize=1000)
@@ -17,7 +20,7 @@ def cached_qa_invoke(query, context):
 
 # SOD conflict detection data
 privilege_aliases = {
-    "Granting/Modifying  User Access": 1,
+    "Granting/Modifying User Access": 1,
     "Authorizing User Access": 2,
     "Authorizing System Access": 3,
     "Application Modification": 4,
@@ -58,7 +61,7 @@ def check_all_user_conflicts_from_tickets(ticket_rows, controller, privilege_ali
     for row in ticket_rows:
         user_token = row['User ID'].strip()
         privileges_raw = row.get('Privileges', '')
-        privilege_texts = [p.strip() for p in privileges_raw.split(',')] if privileges_raw else []
+        privilege_texts = [p.strip() for p in re.split('[,;]', privileges_raw) if p.strip()] if privileges_raw else []
 
         privilege_ids = []
         unknown_privileges = []
@@ -104,7 +107,7 @@ def validate_approver_title(row, cdd_df, question_col, answer_col, org_chart_tex
     if not approver_name or not approver_title:
         return False, f"Validation failed for User ID {user_id}: Approver Name='{approver_name}', Approver Title='{approver_title}' (missing required fields)"
 
-    # Step 1: Check if approver title matches CDD answer (only if QA chain is available)
+    # Step 1: Check if approver title matches CDD answer
     if st.session_state.get("qa_chain") is not None:
         for _, cdd_row in cdd_df.iterrows():
             answer = cdd_row[answer_col] if answer_col in cdd_row and pd.notna(cdd_row[answer_col]) else ""
@@ -145,46 +148,102 @@ def validate_approver_title(row, cdd_df, question_col, answer_col, org_chart_tex
     # Step 3: Check if approver title is managerial in organizational chart
     if org_chart_text:
         try:
-            query = f"Is the job title {approver_title} considered a managerial level position in the organizational chart?"
-            result = cached_qa_invoke(query, org_chart_text) if st.session_state.get("qa_chain") is not None else "yes"
-            is_managerial = "yes" in result.lower() or "manager" in result.lower() or "director" in result.lower() or "executive" in result.lower()
-            if is_managerial:
+            query = f"""
+You are an expert in organizational structure and corporate hierarchy tasked with determining whether a given job title or designation is considered managerial.
+
+A managerial role meets any of the following conditions:
+- Direct or indirect authority over employees (e.g., supervises a team or department).
+- Responsibility for project, resource, or budget management.
+- Involvement in strategic decision-making, planning, or cross-functional leadership.
+- Appears in the organizational chart above individual contributors and positioned with people-reporting lines.
+
+To assess the managerial nature of the designation, evaluate the following:
+1. Does this role appear above others in the organizational chart?
+2. Does this role supervise or coordinate others?
+3. Does this role make strategic or operational decisions?
+4. Does this role influence performance reviews, hiring, or resource allocation?
+
+Use job title semantics (e.g., Manager, Director, VP), org chart position, and responsibility scope to guide your reasoning.
+
+Now evaluate the following designation:
+{approver_title}
+
+Respond with a JSON object containing:
+- "Managerial": "Yes" or "No"
+- "Reasoning": Provide a clear explanation referring to hierarchy, scope, and responsibilities.
+"""
+            result = cached_qa_invoke(query, org_chart_text) if st.session_state.get("qa_chain") is not None else ""
+            if not result:
                 session_logger.log(
                     "Audit Processing",
                     f"Approver Title Validation: User ID={user_id}",
-                    decision="Accepted",
-                    reason=f"Approver title {approver_title} is managerial in organizational chart",
-                    source=f"Org Chart Response={result}"
+                    decision="Error",
+                    reason=f"Empty LLM response for Approver Title='{approver_title}'",
+                    source="Org Chart Query"
                 )
-                return True, f"Validation passed for User ID {user_id}: Approver Title='{approver_title}' is managerial per organizational chart: {result}"
-            else:
+                return False, f"Validation failed for User ID {user_id}: Empty LLM response for Approver Title='{approver_title}'"
+            try:
+                # Preprocess the response to extract valid JSON
+                json_match = re.search(r'\{.*?\}', result, re.DOTALL)
+                if not json_match:
+                    session_logger.log(
+                        "Audit Processing",
+                        f"Approver Title Validation: User ID={user_id}",
+                        decision="Error",
+                        reason="No valid JSON found in LLM response",
+                        source=f"Raw Response={result[:100]}..."
+                    )
+                    return False, f"Validation failed for User ID {user_id}: No valid JSON found in LLM response for Approver Title='{approver_title}'"
+                
+                json_str = json_match.group(0)
+                response = json.loads(json_str)
+                is_managerial = response.get("Managerial", "No").lower() == "yes"
+                reasoning = response.get("Reasoning", "No reasoning provided")
+                if is_managerial:
+                    session_logger.log(
+                        "Audit Processing",
+                        f"Approver Title Validation: User ID={user_id}",
+                        decision="Accepted",
+                        reason=f"Approver title {approver_title} is managerial: {reasoning}",
+                        source=f"Org Chart Query, Raw Response={result[:100]}..."
+                    )
+                    return True, f"Validation passed for User ID {user_id}: Approver Title='{approver_title}' is managerial: {reasoning}"
+                else:
+                    session_logger.log(
+                        "Audit Processing",
+                        f"Approver Title Validation: User ID={user_id}",
+                        decision="Rejected",
+                        reason=f"Approver title {approver_title} not managerial: {reasoning}",
+                        source=f"Org Chart Query, Raw Response={result[:100]}..."
+                    )
+                    return False, f"Validation failed for User ID {user_id}: Approver Title='{approver_title}' not managerial: {reasoning}"
+            except json.JSONDecodeError as e:
                 session_logger.log(
                     "Audit Processing",
                     f"Approver Title Validation: User ID={user_id}",
-                    decision="Rejected",
-                    reason=f"Approver title {approver_title} not managerial in organizational chart",
-                    source=f"Org Chart Response={result}"
+                    decision="Error",
+                    reason=f"Failed to parse LLM response: {str(e)}",
+                    source=f"Raw Response={result[:100]}..."
                 )
-                return False, f"Validation failed for User ID {user_id}: Approver Title='{approver_title}' not managerial per organizational chart: {result}"
+                return False, f"Validation failed for User ID {user_id}: Error parsing LLM response for Approver Title='{approver_title}': {str(e)}"
         except Exception as e:
             session_logger.log(
                 "Audit Processing",
                 f"Approver Title Validation: User ID={user_id}",
                 decision="Error",
                 reason=f"Org chart title check error: {str(e)}",
-                source=f"Approver={approver_name}"
+                source=f"Approver={approver_name}, Raw Response={result[:100] if 'result' in locals() else 'N/A'}..."
             )
             return False, f"Validation failed for User ID {user_id}: Error checking Approver Title='{approver_title}' in organizational chart: {str(e)}"
     else:
-        # If no QA chain and no org chart, assume valid if line manager check passes or no other checks fail
         session_logger.log(
             "Audit Processing",
             f"Approver Title Validation: User ID={user_id}",
             decision="Accepted",
-            reason="No QA chain or org chart available, assuming valid approver title",
+            reason="No org chart available, assuming valid approver title",
             source=f"Approver={approver_name}"
         )
-        return True, f"Validation passed for User ID {user_id}: No QA chain or org chart available, assuming Approver Name='{approver_name}', Approver Title='{approver_title}' is valid"
+        return True, f"Validation passed for User ID {user_id}: No org chart available, assuming Approver Name='{approver_name}', Approver Title='{approver_title}' is valid"
 
 def map_column_names(df, session_logger):
     """Map actual column names to expected column names."""
@@ -198,11 +257,14 @@ def map_column_names(df, session_logger):
         "requested role": "Access Requested",
         "granted role(s)": "Access Granted",
         "granted role": "Access Granted",
-        "user name": "Role",
+        "user name": "User Name",
         "provisioner name": "Granter",
         "privileges": "Privileges",
         "privileges granted": "Privileges",
-        "sod check performed by mgmt": "SOD Check Performed by Mgmt"
+        "sod check performed by mgmt": "SOD Check Performed by Mgmt",
+        "date of access created": "Date of Access Created",
+        "date of last modified": "Date of Last Modified",
+        "access approval date": "Access Approval Date"
     }
     
     rename_dict = {}
@@ -225,8 +287,84 @@ def map_column_names(df, session_logger):
     
     return df
 
+def classify_user(row, audit_period_start, audit_period_end, session_logger):
+    """Classify user as new, modified, both, or neither based on audit period."""
+    user_id = row.get("User ID", "Unknown")
+    created_date = row.get("Date of Access Created", None)
+    modified_date = row.get("Date of Last Modified", None)
+    
+    is_new_user = False
+    is_modified_user = False
+    reason = []
+
+    try:
+        if created_date and pd.notna(created_date):
+            try:
+                created_date = pd.to_datetime(created_date, errors='coerce')
+                if pd.notna(created_date) and audit_period_start <= created_date <= audit_period_end:
+                    is_new_user = True
+                    reason.append(f"Access created on {created_date.strftime('%d/%m/%Y')} is within audit period ({audit_period_start.strftime('%d/%m/%Y')} - {audit_period_end.strftime('%d/%m/%Y')}).")
+                else:
+                    reason.append(f"Access created on {created_date.strftime('%d/%m/%Y')} is outside audit period ({audit_period_start.strftime('%d/%m/%Y')} - {audit_period_end.strftime('%d/%m/%Y')}).")
+            except Exception as e:
+                reason.append(f"Invalid Date of Access Created: {str(e)}")
+        else:
+            reason.append("Date of Access Created is missing.")
+
+        if modified_date and pd.notna(modified_date):
+            try:
+                modified_date = pd.to_datetime(modified_date, errors='coerce')
+                if pd.notna(modified_date) and audit_period_start <= modified_date <= audit_period_end:
+                    is_modified_user = True
+                    reason.append(f"Access modified on {modified_date.strftime('%d/%m/%Y')} is within audit period ({audit_period_start.strftime('%d/%m/%Y')} - {audit_period_end.strftime('%d/%m/%Y')}).")
+                else:
+                    reason.append(f"Access modified on {modified_date.strftime('%d/%m/%Y')} is outside audit period ({audit_period_start.strftime('%d/%m/%Y')} - {audit_period_end.strftime('%d/%m/%Y')}).")
+            except Exception as e:
+                reason.append(f"Invalid Date of Last Modified: {str(e)}")
+        else:
+            reason.append("Date of Last Modified is missing or not applicable.")
+
+        if is_new_user and is_modified_user:
+            status = "New User and Modified User"
+        elif is_new_user:
+            status = "New User"
+        elif is_modified_user:
+            status = "Modified User"
+        else:
+            status = "Neither New nor Modified User"
+
+        session_logger.log(
+            "Audit Processing",
+            f"User Classification: User ID={user_id}",
+            decision="Accepted",
+            reason=f"Classified as {status}: {'; '.join(reason)}",
+            source=f"Created={created_date}, Modified={modified_date}"
+        )
+
+        return {
+            "is_new_user": is_new_user,
+            "is_modified_user": is_modified_user,
+            "status": status,
+            "reason": "; ".join(reason)
+        }
+
+    except Exception as e:
+        session_logger.log(
+            "Audit Processing",
+            f"User Classification: User ID={user_id}",
+            decision="Error",
+            reason=f"Classification error: {str(e)}",
+            source=f"Created={created_date}, Modified={modified_date}"
+        )
+        return {
+            "is_new_user": False,
+            "is_modified_user": False,
+            "status": "Error",
+            "reason": f"Classification error: {str(e)}"
+        }
+
 def process_audit():
-    """Perform control tests and display results with approver title validation."""
+    """Perform control tests and display results with approver title validation and user classification."""
     session_logger = get_session_logger(LOG_DIR, st.session_state.session_id)
     st.subheader("🔍 Audit Processing")
     session_logger.log("Audit Processing", "Started audit processing")
@@ -254,7 +392,47 @@ def process_audit():
 
     qa_chain = st.session_state.get("qa_chain", None)
     cdd_text = st.session_state.get("cdd_text", "")
-    cdd_df = st.session_state.excel_df
+
+    # Load audit period
+    audit_period = st.session_state.get("pip_audit_period", "")
+    if not audit_period:
+        st.error("⚠️ Audit period not specified. Please submit the PIP form with audit period.")
+        session_logger.log(
+            "Audit Processing",
+            "Audit Period Check",
+            decision="Rejected",
+            reason="Audit period not found in session state"
+        )
+        return
+
+    try:
+        start_date_str, end_date_str = audit_period.split(" - ")
+        audit_period_start = pd.to_datetime(start_date_str, dayfirst=True)
+        audit_period_end = pd.to_datetime(end_date_str, dayfirst=True)
+        if audit_period_start > audit_period_end:
+            st.error("⚠️ Audit period start date must be before end date.")
+            session_logger.log(
+                "Audit Processing",
+                "Audit Period Validation",
+                decision="Rejected",
+                reason=f"Invalid audit period: Start date {start_date_str} is after end date {end_date_str}"
+            )
+            return
+        session_logger.log(
+            "Audit Processing",
+            "Audit Period Validation",
+            decision="Accepted",
+            reason=f"Audit period set: {start_date_str} - {end_date_str}"
+        )
+    except Exception as e:
+        st.error(f"⚠️ Invalid audit period format. Use DD/MM/YYYY - DD/MM/YYYY. Error: {str(e)}")
+        session_logger.log(
+            "Audit Processing",
+            "Audit Period Validation",
+            decision="Rejected",
+            reason=f"Invalid audit period format: {str(e)}"
+        )
+        return
 
     # Load updated CDD if available
     session_dir = os.path.join(SESSIONS_DIR, st.session_state.session_id)
@@ -294,7 +472,6 @@ def process_audit():
     # Check CDD question 26 for SOD performed by management
     sod_by_management = False
     try:
-        # Assume question 26 is the last row in the CDD Excel
         last_row = cdd_df.iloc[-1]
         if pd.notna(last_row[question_col]) and "SOD" in last_row[question_col].lower() and pd.notna(last_row[answer_col]):
             sod_by_management = normalize_text(last_row[answer_col]) == "yes"
@@ -341,9 +518,9 @@ def process_audit():
                 source=f"File={pip_info_path}"
             )
 
-    # Try loading each org chart file from uploads directory first, then INPUT_DIR
+    # Try loading each org chart file from uploads, session directory, then INPUT_DIR
     for org_chart_filename in org_chart_filenames:
-        # First try uploads directory
+        # Check uploads directory
         org_chart_path = os.path.join("Uploads", org_chart_filename)
         if os.path.exists(org_chart_path):
             try:
@@ -365,29 +542,50 @@ def process_audit():
                     decision="Rejected",
                     reason=f"Failed to load org chart {org_chart_path}: {str(e)}"
                 )
-        else:
-            # Fallback to INPUT_DIR
-            org_chart_path = os.path.join(INPUT_DIR, org_chart_filename)
-            if os.path.exists(org_chart_path):
-                try:
-                    org_chart_text = extract_text_from_file(org_chart_path, session_logger)
-                    if org_chart_text:
-                        session_logger.log(
-                            "Audit Processing",
-                            "Org Chart Load",
-                            decision="Accepted",
-                            reason="Organizational chart text extracted",
-                            source=f"File={org_chart_path}"
-                        )
-                        break
-                except Exception as e:
-                    st.warning(f"⚠️ Failed to load organizational chart {org_chart_path}: {str(e)}")
+        # Check session directory
+        org_chart_path = os.path.join(session_dir, org_chart_filename)
+        if os.path.exists(org_chart_path):
+            try:
+                org_chart_text = extract_text_from_file(org_chart_path, session_logger)
+                if org_chart_text:
                     session_logger.log(
                         "Audit Processing",
                         "Org Chart Load",
-                        decision="Rejected",
-                        reason=f"Failed to load org chart {org_chart_path}: {str(e)}"
+                        decision="Accepted",
+                        reason="Organizational chart text extracted",
+                        source=f"File={org_chart_path}"
                     )
+                    break
+            except Exception as e:
+                st.warning(f"⚠️ Failed to load organizational chart {org_chart_path}: {str(e)}")
+                session_logger.log(
+                    "Audit Processing",
+                    "Org Chart Load",
+                    decision="Rejected",
+                    reason=f"Failed to load org chart {org_chart_path}: {str(e)}"
+                )
+        # Fallback to INPUT_DIR
+        org_chart_path = os.path.join(INPUT_DIR, org_chart_filename)
+        if os.path.exists(org_chart_path):
+            try:
+                org_chart_text = extract_text_from_file(org_chart_path, session_logger)
+                if org_chart_text:
+                    session_logger.log(
+                        "Audit Processing",
+                        "Org Chart Load",
+                        decision="Accepted",
+                        reason="Organizational chart text extracted",
+                        source=f"File={org_chart_path}"
+                    )
+                    break
+            except Exception as e:
+                st.warning(f"⚠️ Failed to load organizational chart {org_chart_path}: {str(e)}")
+                session_logger.log(
+                    "Audit Processing",
+                    "Org Chart Load",
+                    decision="Rejected",
+                    reason=f"Failed to load org chart {org_chart_path}: {str(e)}"
+                )
     
     if not org_chart_text:
         st.warning("⚠️ No valid organizational chart found. Approver validation will skip org chart check.")
@@ -431,7 +629,12 @@ def process_audit():
     test_df = map_column_names(test_df, session_logger)
 
     # Validate required columns in test data
-    required_columns = ["User ID", "Approver Name", "Approver Title", "Line Manager", "Access Requested", "Access Granted", "Role", "Granter", "Privileges"]
+    required_columns = [
+        "User ID", "Approver Name", "Approver Title", "Line Manager", 
+        "Access Requested", "Access Granted", "User Name", "Granter", 
+        "Privileges", "Date of Access Created", "Date of Last Modified", 
+        "Access Approval Date"
+    ]
     missing_columns = [col for col in required_columns if col not in test_df.columns]
     if missing_columns:
         st.error(f"⚠️ Testing data Excel must contain columns: {', '.join(required_columns)}. Missing: {', '.join(missing_columns)}. Found: {list(test_df.columns)}")
@@ -445,30 +648,38 @@ def process_audit():
 
     # Define control tests
     control_tests = [
-        {"name": "New user access approved", "type": "Access approval"},
-        {"name": "Modified user access approved", "type": "Access approval"},
-        {"name": "New user access consistent", "type": "Access requested = Access granted"},
-        {"name": "Modified user access consistent", "type": "Access requested = Access granted"},
-        {"name": "New user access appropriate", "type": "Access is appropriate"},
-        {"name": "Modified user access appropriate", "type": "Access is appropriate"},
-        {"name": "SoD: New user access", "type": "Approver = Granter/Creater"},
-        {"name": "SoD: Modified user access", "type": "Approver = Granter/Creater"},
-        {"name": "SoD: New user privilege conflicts", "type": "Privilege conflicts"},
-        {"name": "SoD: Modified user privilege conflicts", "type": "Privilege conflicts"}
+        {"name": "New user access approved", "type": "Access approval", "applies_to": "new"},
+        {"name": "Modified user access approved", "type": "Access approval", "applies_to": "modified"},
+        {"name": "New user access consistent", "type": "Access requested = Access granted", "applies_to": "new"},
+        {"name": "Modified user access consistent", "type": "Access requested = Access granted", "applies_to": "modified"},
+        {"name": "New user access appropriateness", "type": "Access appropriateness", "applies_to": "new"},
+        {"name": "Modified user access appropriateness", "type": "Access appropriateness", "applies_to": "modified"},
+        {"name": "SoD: New user access", "type": "Approver = Granter/Creator/Provisioner", "applies_to": "new"},
+        {"name": "SoD: Modified user access", "type": "Approver = Granter/Creator/Provisioner", "applies_to": "modified"},
+        {"name": "Access approval date validation", "type": "Date validation", "applies_to": "both"}
     ]
 
     # Process rows and control tests in a single loop
     st.write("### Audit Results")
     results = []
     missing_titles = []
+    user_classifications = []
     for idx, row in test_df.iterrows():
         user_id = row["User ID"]
         access_requested = row.get("Access Requested", "")
         access_granted = row.get("Access Granted", "")
-        role = row.get("Role", "")
+        user_name = row.get("User Name", "")
         approver_name = row.get("Approver Name", "")
         granter = row.get("Granter", "")
         privileges = row.get("Privileges", "")
+
+        # Classify user
+        classification = classify_user(row, audit_period_start, audit_period_end, session_logger)
+        user_classifications.append({
+            "User ID": user_id,
+            "Status": classification["status"],
+            "Reason": classification["reason"]
+        })
 
         # Validate approver title once per row
         is_valid_approver, approver_reason = validate_approver_title(row, cdd_df, question_col, answer_col, org_chart_text, session_logger)
@@ -517,15 +728,50 @@ def process_audit():
             sod_results = check_all_user_conflicts_from_tickets([ticket_row], controller, privilege_aliases)
             sod_result = next((r for r in sod_results if r["user_token"] == user_id), None)
 
-        for test in control_tests:
+        # Apply relevant tests based on classification
+        applicable_tests = [
+            test for test in control_tests
+            if (test["applies_to"] == "new" and classification["is_new_user"]) or
+               (test["applies_to"] == "modified" and classification["is_modified_user"]) or
+               (test["applies_to"] == "both")
+        ]
+
+        for test in applicable_tests:
             test_name = f"{test['name']}"
             test_type = test["type"]
             try:
                 if test_type == "Access approval":
-                    result_status = "PASS" if is_valid_approver else "FAIL"
-                    reason = approver_reason
+                    if not user_name or not approver_name:
+                        result_status = "FAIL"
+                        reason = f"Validation failed for User ID {user_id}: Missing User Name='{user_name}' or Approver Name='{approver_name}'"
+                        session_logger.log(
+                            "Audit Processing",
+                            f"Self-Approval Check: User ID={user_id}",
+                            decision="Rejected",
+                            reason=reason,
+                            source=f"User Name={user_name}, Approver Name={approver_name}"
+                        )
+                    elif normalize_text(user_name) == normalize_text(approver_name):
+                        result_status = "FAIL"
+                        reason = f"Validation failed for User ID {user_id}: Self Approval detected (User Name='{user_name}' is the same as Approver Name='{approver_name}')"
+                        session_logger.log(
+                            "Audit Processing",
+                            f"Self-Approval Check: User ID={user_id}",
+                            decision="Rejected",
+                            reason=reason,
+                            source=f"User Name={user_name}, Approver Name={approver_name}"
+                        )
+                    else:
+                        result_status = "PASS" if is_valid_approver else "FAIL"
+                        reason = approver_reason
+                        session_logger.log(
+                            "Audit Processing",
+                            f"Self-Approval Check: User ID={user_id}",
+                            decision="Accepted",
+                            reason=f"No self-approval detected: User Name='{user_name}' is different from Approver Name='{approver_name}'",
+                            source=f"User Name={user_name}, Approver Name={approver_name}"
+                        )
                 elif test_type == "Access requested = Access granted":
-                    # Pre-check exact match
                     if normalize_text(access_requested) == normalize_text(access_granted):
                         result_status = "PASS"
                         reason = f"Validation passed for User ID {user_id}: Requested Access='{access_requested}' exactly matches Granted Access='{access_granted}'"
@@ -535,22 +781,7 @@ def process_audit():
                         is_pass = "yes" in result.lower() or "consistent" in result.lower()
                         result_status = "PASS" if is_pass else "FAIL"
                         reason = f"Validation {'passed' if is_pass else 'failed'} for User ID {user_id}: Requested Access='{access_requested}', Granted Access='{access_granted}', {'LLM Response: ' + result if qa_chain is not None else 'No QA chain, assuming consistent'}"
-                elif test_type == "Access is appropriate":
-                    query = f"Is the access '{access_granted}' for User ID {user_id} commensurate with the role '{role}' and free of segregation of duties conflicts?"
-                    result = cached_qa_invoke(query, cdd_text) if qa_chain is not None else "yes"
-                    is_pass = "yes" in result.lower() or "appropriate" in result.lower() or "no conflict" in result.lower()
-                    result_status = "PASS" if is_pass else "FAIL"
-                    reason = f"Validation {'passed' if is_pass else 'failed'} for User ID {user_id}: Granted Access='{access_granted}', Role='{role}', {'LLM Response: ' + result if qa_chain is not None else 'No QA chain, assuming appropriate'}"
-                elif test_type == "Approver = Granter/Creater":
-                    # Pre-check presence of approver_name and granter
-                    if not approver_name or not granter:
-                        result_status = "FAIL"
-                        reason = f"Validation failed for User ID {user_id}: Missing Approver Name='{approver_name}' or Granter='{granter}'"
-                    else:
-                        is_pass = normalize_text(approver_name) != normalize_text(granter)
-                        result_status = "PASS" if is_pass else "FAIL"
-                        reason = f"Validation {'passed' if is_pass else 'failed'} for User ID {user_id}: Approver Name='{approver_name}', Granter Name='{granter}', {'Approver and granter are different' if is_pass else 'Approver and granter are the same'}"
-                elif test_type == "Privilege conflicts":
+                elif test_type == "Access appropriateness":
                     if not perform_sod_check:
                         result_status = "SKIPPED"
                         reason = f"Validation skipped for User ID {user_id}: SOD check performed by management"
@@ -562,20 +793,68 @@ def process_audit():
                         reason = f"Validation failed for User ID {user_id}: Error processing SOD conflicts"
                     else:
                         conflict_exists = sod_result["conflict_exists"]
-                        conflicts = sod_result["conflicting_privileges"]
                         unknown_privileges = sod_result["unknown_privileges"]
                         if conflict_exists:
-                            conflict_details = ", ".join(
-                                [f"{c['privilege_1_name']} vs {c['privilege_2_name']}" for c in conflicts]
-                            )
                             result_status = "FAIL"
-                            reason = f"Validation failed for User ID {user_id}: SOD conflicts detected: {conflict_details}"
+                            reason = f"Validation failed for User ID {user_id}: SoD Conflict detected"
                         elif unknown_privileges:
                             result_status = "FAIL"
                             reason = f"Validation failed for User ID {user_id}: Unknown privileges: {', '.join(unknown_privileges)}"
                         else:
                             result_status = "PASS"
                             reason = f"Validation passed for User ID {user_id}: No SOD conflicts detected in privileges: {privileges}"
+                elif test_type == "Approver = Granter/Creator/Provisioner":
+                    if not approver_name or not granter:
+                        result_status = "FAIL"
+                        reason = f"Validation failed for User ID {user_id}: Missing Approver Name='{approver_name}' or Granter='{granter}'"
+                    else:
+                        is_pass = normalize_text(approver_name) != normalize_text(granter)
+                        result_status = "PASS" if is_pass else "FAIL"
+                        reason = f"Validation {'passed' if is_pass else 'failed'} for User ID {user_id}: Approver Name='{approver_name}', Granter Name='{granter}', {'Approver and granter are different' if is_pass else 'Approver and granter are the same'}"
+                elif test_type == "Date validation":
+                    approval_date = row.get("Access Approval Date", None)
+                    created_date = row.get("Date of Access Created", None)
+                    modified_date = row.get("Date of Last Modified", None)
+                    try:
+                        approval_date = pd.to_datetime(approval_date, errors='coerce') if approval_date and pd.notna(approval_date) else None
+                        created_date = pd.to_datetime(created_date, errors='coerce') if created_date and pd.notna(created_date) else None
+                        modified_date = pd.to_datetime(modified_date, errors='coerce') if modified_date and pd.notna(modified_date) else None
+
+                        if not approval_date or (not created_date and not modified_date):
+                            result_status = "FAIL"
+                            reason = f"Validation failed for User ID {user_id}: Missing Access Approval Date='{approval_date}' or both Date of Access Created='{created_date}' and Date of Last Modified='{modified_date}'"
+                        else:
+                            created_diff = abs((approval_date - created_date).days) if created_date else float('inf')
+                            modified_diff = abs((approval_date - modified_date).days) if modified_date else float('inf')
+                            
+                            closer_date = created_date if created_diff <= modified_diff else modified_date
+                            closer_date_name = "Date of Access Created" if created_diff <= modified_diff else "Date of Last Modified"
+                            closer_date_str = closer_date.strftime('%d/%m/%Y') if closer_date else "N/A"
+
+                            if closer_date and closer_date < approval_date:
+                                result_status = "FAIL"
+                                reason = f"Validation failed for User ID {user_id}: {closer_date_name}='{closer_date_str}' is before Access Approval Date='{approval_date.strftime('%d/%m/%Y')}'"
+                            else:
+                                result_status = "PASS"
+                                reason = f"Validation passed for User ID {user_id}: {closer_date_name}='{closer_date_str}' is on or after Access Approval Date='{approval_date.strftime('%d/%m/%Y')}'"
+
+                        session_logger.log(
+                            "Audit Processing",
+                            f"Date Validation: User ID={user_id}",
+                            decision=result_status,
+                            reason=reason,
+                            source=f"Access Approval Date={approval_date}, Date of Access Created={created_date}, Date of Last Modified={modified_date}"
+                        )
+                    except Exception as e:
+                        result_status = "FAIL"
+                        reason = f"Validation failed for User ID {user_id}: Error processing dates: {str(e)}"
+                        session_logger.log(
+                            "Audit Processing",
+                            f"Date Validation: User ID={user_id}",
+                            decision="Error",
+                            reason=reason,
+                            source=f"Access Approval Date={approval_date}, Date of Access Created={created_date}, Date of Last Modified={modified_date}"
+                        )
 
                 results.append({
                     "Test Name": test_name,
@@ -607,13 +886,21 @@ def process_audit():
                 )
 
     # Group results by User ID and display in expanders
-    if results:
+    if results or user_classifications:
         results_df = pd.DataFrame(results)
         grouped_results = results_df.groupby("User ID")
         
         for user_id, group_df in grouped_results:
             with st.expander(f"User ID: {user_id}"):
-                display_df = group_df.drop(columns=["User ID", "Approver Status"], errors="ignore")
+                classification = next((c for c in user_classifications if c["User ID"] == user_id), None)
+                if classification:
+                    st.markdown(f"**Status**: {classification['Status']}")
+                    st.markdown(f"**Reason**: {classification['Reason']}")
+                else:
+                    st.markdown("**Status**: Unknown")
+                    st.markdown("**Reason**: Classification not available")
+                
+                display_df = group_df.drop(columns=["User ID"], errors="ignore")
                 st.dataframe(display_df, use_container_width=True)
         
         session_logger.log(

@@ -126,20 +126,17 @@ def get_qa_chain():
         temperature=0.0
     )
     prompt_template = ChatPromptTemplate.from_template(
-        """
-        Answer the question in one word or a short phrase (1-5 words). For lists, use a comma-separated list. Return "NotFound" if no information is found. Exclude all extra text.
+"""
+    Strictly extract the most specific and relevant answer from the context. Answer in 1-5 words, comma-separated for lists. Use exact terms or phrases from the context. If the answer is not found, return "NotFound". Do not infer. Do not explain.
 
-        Examples:
-        - Question: How is access requested?
-          Answer: WebForm
-        - Question: Who approves the access?
-          Answer: Alisha, John
-        - Question: Password policy duration?
-          Answer: Monthly
+    - Focus on capturing precise, factual details.
+    - Prefer specific nouns or named entities over generalizations.
+    - Do not rephrase or add assumptions.
+    - Do not return partial or vague answers.
 
-        Question: {question}
-        Context: {context}
-        """
+    Question: {question}
+    Context: {context}
+"""
     )
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,

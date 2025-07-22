@@ -1,0 +1,30 @@
+[
+  {
+    "log_id": "fb7a1146-d3da-4e69-890e-7c6059d5ebbc",
+    "timestamp": "2025-07-22T10:49:04.999164",
+    "session_id": "20250722_104904",
+    "component": "Application",
+    "message": "Application session initialized",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "session_id": "20250722_104904",
+      "decision_id": "application_7634358d"
+    },
+    "reason": "New session ID: 20250722_104904"
+  },
+  {
+    "log_id": "6876a869-2a7c-4b9d-b0a6-e747c3828b86",
+    "timestamp": "2025-07-22T10:49:52.261991",
+    "session_id": "20250722_104904",
+    "component": "Authentication",
+    "message": "Login attempt",
+    "level": "INFO",
+    "decision": "Accepted",
+    "context": {
+      "username": "admin",
+      "decision_id": "authentication_f6194531"
+    },
+    "reason": "Valid credentials provided"
+  }
+]
