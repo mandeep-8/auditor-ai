@@ -1,11 +1,11 @@
 #utils/file_processor.py
-from utils.content_validator import extract_text_from_file, validate_document, process_org_chart_image
+from utils.content_validator import extract_text_from_file, validate_document
 from datetime import datetime
 import os
 
 def process_file(file, category, file_path, session_logger):
     """Process a single file: save, extract text, and validate."""
-    result = {"path": file_path, "text": None, "valid": False, "name": file.name, "error": None, "hierarchy": []}
+    result = {"path": file_path, "text": None, "valid": False, "name": file.name, "error": None}
     
     # Step 1: Save file
     session_logger.log("Document Validation", f"File={file.name}, Category={category}, Step=Saving")
@@ -23,17 +23,11 @@ def process_file(file, category, file_path, session_logger):
         )
         return result
 
-    # Step 2: Extract text and hierarchy for org charts, only text for others
+    # Step 2: Extract text
     session_logger.log("Document Validation", f"File={file.name}, Category={category}, Step=Text Extraction")
     try:
-        file_extension = os.path.splitext(file_path)[1].lower().lstrip(".")
-        if category == "Organizational Chart" and file_extension in ["jpg", "jpeg", "png"]:
-            text, hierarchy = process_org_chart_image(file_path, session_logger.session_id, session_logger)
-            result["text"] = text
-            result["hierarchy"] = hierarchy
-        else:
-            text = extract_text_from_file(file_path, session_logger)
-            result["text"] = text
+        text = extract_text_from_file(file_path, session_logger)
+        result["text"] = text
         session_logger.log(
             "Document Validation",
             f"File={file.name}, Category={category}, Step=Text Extraction",

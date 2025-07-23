@@ -17,10 +17,3 @@ python-doctr[tf]
 Pillow
 tensorflow
 chromadb
-scikit-learn 
-nltk 
-opencv-python 
-torch 
-torchvision 
-numpy
-spacy
